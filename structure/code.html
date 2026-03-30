@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ANVI DIGITAL | Architecting Growth Through Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#e2e2e2",
+              "surface-tint": "#5e5e5e",
+              "on-primary-container": "#454545",
+              "surface-bright": "#faf9f7",
+              "inverse-on-surface": "#f1f1ef",
+              "outline-variant": "#bccabd",
+              "secondary-fixed-dim": "#59de92",
+              "tertiary": "#635e52",
+              "on-tertiary-container": "#494539",
+              "inverse-primary": "#c6c6c6",
+              "outline": "#6d7a6f",
+              "on-primary-fixed": "#1b1b1b",
+              "error-container": "#ffdad6",
+              "inverse-surface": "#2f3130",
+              "surface": "#faf9f7",
+              "on-secondary-fixed-variant": "#00522d",
+              "on-primary": "#ffffff",
+              "surface-container-low": "#f4f4f1",
+              "secondary": "#006d3e",
+              "tertiary-fixed": "#e9e2d2",
+              "on-primary-fixed-variant": "#474747",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#3d4a40",
+              "on-secondary-fixed": "#00210f",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#c6c6c6",
+              "tertiary-container": "#b8b2a4",
+              "secondary-fixed": "#78fcac",
+              "tertiary-fixed-dim": "#cdc6b7",
+              "background": "#faf9f7",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#4a473b",
+              "surface-dim": "#dadad8",
+              "primary-container": "#b3b3b3",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e3e2e0",
+              "primary": "#5e5e5e",
+              "surface-container": "#eeeeec",
+              "surface-container-high": "#e8e8e6",
+              "surface-variant": "#e3e2e0",
+              "on-tertiary-fixed": "#1e1b12",
+              "secondary-container": "#78fcac",
+              "on-secondary-container": "#007442",
+              "on-background": "#1a1c1b",
+              "on-surface": "#1a1c1b",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Space Grotesk"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #faf9f7; color: #1a1c1b; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .text-giant { font-size: clamp(3rem, 12vw, 10rem); line-height: 0.85; letter-spacing: -0.04em; }
+        .stagger-grid { display: grid; grid-template-columns: repeat(12, 1fr); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .brutalist-border { border: 2px solid #1a1c1b; }
+        .text-outline { -webkit-text-stroke: 1px #1a1c1b; color: transparent; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 z-50 w-full bg-[#faf9f7]/80 backdrop-blur-md transition-colors duration-500">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-black tracking-tighter text-[#1a1c1b]" href="/">ANVI DIGITAL</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-[#006d3e] transition-all duration-300" href="#lead-gen">Lead Generation</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-[#006d3e] transition-all duration-300" href="#ai-agents">AI Agents</a>
+<button class="bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform">Let's Talk Growth</button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="min-h-screen flex flex-col justify-center pt-32 px-8 max-w-screen-2xl mx-auto">
+<div class="mb-8">
+<span class="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">Growth Strategy &amp; Implementation</span>
+</div>
+<h1 class="text-giant font-black uppercase mb-12">
+            Achieve<br/>
+<span class="text-primary-container">Product-Led</span><br/>
+            Growth
+        </h1>
+<div class="stagger-grid">
+<div class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 border-l-4 border-on-surface pl-8 py-4">
+<p class="text-2xl md:text-4xl font-light leading-tight mb-8">
+                    16+ years of experience engineering high-performance growth loops and proprietary AI frameworks.
+                </p>
+<div class="flex gap-4">
+<button class="bg-on-background text-surface px-10 py-5 font-bold uppercase tracking-widest transition-all hover:bg-secondary">Scale Now</button>
+<button class="border-2 border-on-background text-on-background px-10 py-5 font-bold uppercase tracking-widest transition-all hover:bg-surface-container">Our Thesis</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Lead Generation -->
+<section class="py-32 px-8 bg-surface-container-low relative overflow-hidden" id="lead-gen">
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#1a1c1b 1px, transparent 1px); background-size: 40px 40px;"></div>
+<div class="max-w-screen-2xl mx-auto relative z-10">
+<div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-8">
+<div>
+<h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-6">The Lead<br/>Engine.</h2>
+<p class="text-2xl max-w-xl text-on-surface-variant font-light">Architecting omnipresence across the search and social graph through intelligence-first frameworks.</p>
+</div>
+<div class="hidden lg:block text-9xl font-black text-on-surface/5 select-none -mb-4">LOOP</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<div class="group relative bg-surface p-12 lg:p-16 border-l-8 border-secondary flex flex-col justify-between min-h-[400px] hover:bg-on-background hover:text-surface transition-all duration-500">
+<div class="absolute top-8 right-8 text-6xl font-black text-on-surface/5 group-hover:text-surface/10 transition-colors">01</div>
+<div>
+<span class="material-symbols-outlined text-6xl mb-8 text-secondary">search_insights</span>
+<h3 class="text-4xl lg:text-5xl font-black uppercase mb-6">AI SEO</h3>
+<p class="text-xl text-on-surface-variant group-hover:text-surface/70 leading-relaxed max-w-md">LLM-optimized content clusters that dominate traditional SERPs and generative search engines alike.</p>
+</div>
+</div>
+<div class="group relative bg-surface p-12 lg:p-16 border-l-8 border-on-surface flex flex-col justify-between min-h-[400px] hover:bg-secondary hover:text-surface transition-all duration-500">
+<div class="absolute top-8 right-8 text-6xl font-black text-on-surface/5 group-hover:text-surface/10 transition-colors">02</div>
+<div>
+<span class="material-symbols-outlined text-6xl mb-8">bolt</span>
+<h3 class="text-4xl lg:text-5xl font-black uppercase mb-6">AEO</h3>
+<p class="text-xl text-on-surface-variant group-hover:text-surface/70 leading-relaxed max-w-md">Answer Engine Optimization. Ensuring your brand is the primary source for modern AI-driven queries.</p>
+</div>
+</div>
+<div class="group relative bg-surface p-12 lg:p-16 border-l-8 border-on-surface flex flex-col justify-between min-h-[400px] hover:bg-secondary hover:text-surface transition-all duration-500">
+<div class="absolute top-8 right-8 text-6xl font-black text-on-surface/5 group-hover:text-surface/10 transition-colors">03</div>
+<div>
+<span class="material-symbols-outlined text-6xl mb-8">ads_click</span>
+<h3 class="text-4xl lg:text-5xl font-black uppercase mb-6">Google Ads</h3>
+<p class="text-xl text-on-surface-variant group-hover:text-surface/70 leading-relaxed max-w-md">High-intent capture with proprietary ML bidding strategies and creative testing at extreme scale.</p>
+</div>
+</div>
+<div class="group relative bg-surface p-12 lg:p-16 border-l-8 border-secondary flex flex-col justify-between min-h-[400px] hover:bg-on-background hover:text-surface transition-all duration-500">
+<div class="absolute top-8 right-8 text-6xl font-black text-on-surface/5 group-hover:text-surface/10 transition-colors">04</div>
+<div>
+<span class="material-symbols-outlined text-6xl mb-8 text-secondary">share</span>
+<h3 class="text-4xl lg:text-5xl font-black uppercase mb-6">Paid Social</h3>
+<p class="text-xl text-on-surface-variant group-hover:text-surface/70 leading-relaxed max-w-md">Performance-engineered creative designed for conversion, scaling beyond vanity metrics into real revenue.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: AI Agents (Redesigned) -->
+<section class="py-32 px-8 bg-surface" id="ai-agents">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col mb-32">
+<h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
+                    Deploy AI Agents <br/>
+                    With <span class="italic text-secondary">Measurable</span> ROI.
+                </h2>
+<div class="w-24 h-2 bg-on-surface"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 border-t-2 border-on-surface">
+<!-- Step 01 -->
+<div class="p-12 md:p-20 border-b-2 md:border-r-2 border-on-surface flex flex-col justify-between">
+<div class="mb-12">
+<span class="text-8xl md:text-[10rem] font-black leading-none text-outline">01</span>
+</div>
+<div>
+<h3 class="text-4xl font-black uppercase mb-6 tracking-tight">Discovery</h3>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-sm">We audit your workflows to find the highest-leverage automation opportunities. We build for ROI, not for novelty.</p>
+</div>
+</div>
+<!-- Step 02 - Staggered Offset Content -->
+<div class="p-12 md:p-20 border-b-2 border-on-surface flex flex-col justify-between bg-surface-container-low">
+<div class="mb-12 flex justify-end">
+<span class="text-8xl md:text-[10rem] font-black leading-none text-on-surface">02</span>
+</div>
+<div class="md:pl-12">
+<h3 class="text-4xl font-black uppercase mb-6 tracking-tight">Architecture</h3>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-sm">Rapid prototyping of custom LLM agents, integrated via robust API layers and secure RAG architectures.</p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="p-12 md:p-20 border-b-2 md:border-r-2 border-on-surface flex flex-col justify-between bg-secondary/5">
+<div class="mb-12">
+<span class="text-8xl md:text-[10rem] font-black leading-none text-on-surface">03</span>
+</div>
+<div>
+<h3 class="text-4xl font-black uppercase mb-6 tracking-tight">Evolve</h3>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-sm">Continuous monitoring and logic refinement based on real-world edge cases and performance feedback loops.</p>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="p-12 md:p-20 border-b-2 border-on-surface flex flex-col justify-between">
+<div class="mb-12 flex justify-end">
+<span class="text-8xl md:text-[10rem] font-black leading-none text-outline">04</span>
+</div>
+<div class="md:pl-12">
+<h3 class="text-4xl font-black uppercase mb-6 tracking-tight">Govern</h3>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-sm">Enterprise-grade deployment with strict security protocols, cost guardrails, and compliance oversight.</p>
+</div>
+</div>
+</div>
+<!-- Botom CTA Line -->
+<div class="mt-20 flex flex-col md:flex-row justify-between items-center gap-8">
+<p class="text-2xl font-bold uppercase tracking-widest text-on-surface-variant">Building agents in a budget your CFO likes.</p>
+<button class="bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-secondary transition-colors">Start Integration</button>
+</div>
+</div>
+</section>
+<!-- Section 4: Social Proof -->
+<section class="py-24 border-y border-surface-variant">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="md:w-1/3 text-center md:text-left">
+<h2 class="text-5xl font-black uppercase">70+ Clients</h2>
+<p class="text-on-surface-variant mt-4">From venture-backed startups to Fortune 500 enterprises, we deliver growth that sticks.</p>
+</div>
+<div class="md:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 opacity-40 grayscale">
+<div class="h-12 flex items-center justify-center font-bold text-xl uppercase tracking-widest">GlobalOne</div>
+<div class="h-12 flex items-center justify-center font-bold text-xl uppercase tracking-widest">NexTech</div>
+<div class="h-12 flex items-center justify-center font-bold text-xl uppercase tracking-widest">Lumina</div>
+<div class="h-12 flex items-center justify-center font-bold text-xl uppercase tracking-widest">AuraPay</div>
+<div class="h-12 flex items-center justify-center font-bold text-xl uppercase tracking-widest">Vertex</div>
+<div class="h-12 flex items-center justify-center font-bold text-xl uppercase tracking-widest">Stratos</div>
+<div class="h-12 flex items-center justify-center font-bold text-xl uppercase tracking-widest">EonCloud</div>
+<div class="h-12 flex items-center justify-center font-bold text-xl uppercase tracking-widest">PulseAI</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Trust & FAQ -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div>
+<h2 class="text-6xl font-black uppercase mb-16">The Verdict.</h2>
+<div class="space-y-12">
+<div class="p-8 bg-surface-container-low border-l-8 border-secondary">
+<p class="text-xl italic mb-6">"Anvi Digital didn't just give us a strategy; they gave us an engine. Our lead acquisition costs dropped by 40% in three months."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-on-surface rounded-full flex items-center justify-center text-surface font-bold">JS</div>
+<div>
+<p class="font-bold uppercase text-sm tracking-widest">Jordan Smith</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">CEO, NexTech Global</p>
+</div>
+</div>
+</div>
+<div class="p-8 bg-surface-container-low border-l-8 border-on-surface translate-x-4 md:translate-x-12">
+<p class="text-xl italic mb-6">"14+ recommendations on LinkedIn for a reason. Their AI implementation is lightyears ahead of standard agency offerings."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-on-surface rounded-full flex items-center justify-center text-surface font-bold">AR</div>
+<div>
+<p class="font-bold uppercase text-sm tracking-widest">Alex Rivera</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">CTO, AuraPay</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-6xl font-black uppercase mb-16">FAQ</h2>
+<div class="divide-y divide-surface-variant">
+<details class="group py-6">
+<summary class="flex justify-between items-center font-bold text-xl uppercase cursor-pointer list-none">
+                                How quickly can we see results?
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant leading-relaxed">Immediate optimizations start within 48 hours. Substantial growth compound results typically manifest between 45-90 days as algorithms stabilize.</p>
+</details>
+<details class="group py-6">
+<summary class="flex justify-between items-center font-bold text-xl uppercase cursor-pointer list-none">
+                                Do you work with startups?
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant leading-relaxed">Yes, provided there is Product-Market Fit. We specialize in scaling what already works into a market-dominating force.</p>
+</details>
+<details class="group py-6">
+<summary class="flex justify-between items-center font-bold text-xl uppercase cursor-pointer list-none">
+                                Is the AI custom built?
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant leading-relaxed">Every deployment is bespoke. We leverage foundation models but build custom RAG pipelines and proprietary logic tailored to your data.</p>
+</details>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Contact -->
+<section class="py-32 px-8 bg-on-background text-surface">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div>
+<h2 class="text-7xl font-black uppercase leading-none mb-8">Ready to<br/>Evolve?</h2>
+<p class="text-2xl text-surface/60 mb-12">Stop guessing. Start growing. Let's build your intelligence-led future today.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">mail</span>
+<span class="text-xl">growth@anvi.digital</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<span class="text-xl">London • San Francisco • Remote</span>
+</div>
+</div>
+</div>
+<form class="space-y-8">
+<div class="group">
+<label class="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-surface/20 focus:ring-0 focus:border-secondary transition-colors py-4 text-xl placeholder:text-surface/10" placeholder="John Doe" type="text"/>
+</div>
+<div class="group">
+<label class="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40">Work Email</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-surface/20 focus:ring-0 focus:border-secondary transition-colors py-4 text-xl placeholder:text-surface/10" placeholder="john@company.com" type="email"/>
+</div>
+<div class="group">
+<label class="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40">Inquiry Type</label>
+<select class="w-full bg-transparent border-0 border-b-2 border-surface/20 focus:ring-0 focus:border-secondary transition-colors py-4 text-xl appearance-none">
+<option class="text-on-background">Lead Generation</option>
+<option class="text-on-background">AI Agent Building</option>
+<option class="text-on-background">Growth Consulting</option>
+</select>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-6 font-black uppercase tracking-[0.2em] text-sm hover:translate-y-[-4px] transition-transform">Initialize Partnership</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1a1c1b] py-24 px-8 mt-0 w-full flex flex-col items-start justify-start text-left">
+<div class="max-w-screen-2xl mx-auto w-full">
+<h2 class="text-6xl font-black text-white mb-12">ANVI DIGITAL</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full mb-24">
+<div class="flex flex-col space-y-4">
+<span class="text-white/20 uppercase tracking-widest text-xs font-bold">Solutions</span>
+<a class="text-[#faf9f7]/40 hover:text-[#006d3e] hover:italic transition-all duration-500 font-bold uppercase text-2xl" href="#lead-gen">Lead Generation</a>
+<a class="text-[#faf9f7]/40 hover:text-[#006d3e] hover:italic transition-all duration-500 font-bold uppercase text-2xl" href="#ai-agents">AI Agents</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="text-white/20 uppercase tracking-widest text-xs font-bold">Company</span>
+<a class="text-[#faf9f7]/40 hover:text-[#006d3e] hover:italic transition-all duration-500 font-bold uppercase text-2xl" href="#">About</a>
+<a class="text-[#faf9f7]/40 hover:text-[#006d3e] hover:italic transition-all duration-500 font-bold uppercase text-2xl" href="#">Insights</a>
+<a class="text-[#faf9f7]/40 hover:text-[#006d3e] hover:italic transition-all duration-500 font-bold uppercase text-2xl" href="#">Contact</a>
+</div>
+<div class="lg:col-span-2">
+<p class="font-['Space_Grotesk'] text-[clamp(2rem,8vw,5rem)] font-bold uppercase leading-[0.85] tracking-tighter text-white/5">
+                    ARCHITECTING GROWTH THROUGH INTELLIGENCE.
+                </p>
+</div>
+</div>
+<div class="border-t border-white/10 pt-12 w-full flex flex-col md:flex-row justify-between items-center gap-8">
+<p class="text-[#faf9f7]/40 uppercase tracking-widest text-xs font-bold">© 2024 ANVI DIGITAL. ARCHITECTING GROWTH THROUGH INTELLIGENCE.</p>
+<div class="flex gap-8">
+<a class="text-[#faf9f7]/40 hover:text-white transition-colors" href="#">LINKEDIN</a>
+<a class="text-[#faf9f7]/40 hover:text-white transition-colors" href="#">X (TWITTER)</a>
+<a class="text-[#faf9f7]/40 hover:text-white transition-colors" href="#">GITHUB</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
