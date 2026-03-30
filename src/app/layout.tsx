@@ -34,7 +34,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-surface text-on-surface antialiased overflow-x-hidden">
+      <body className="bg-surface text-on-surface antialiased overflow-x-hidden" suppressHydrationWarning>
         {children}
       </body>
     </html>
