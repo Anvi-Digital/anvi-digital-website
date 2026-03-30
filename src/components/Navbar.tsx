@@ -18,20 +18,23 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-12">
           <a
-            className="font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-[#006d3e] transition-all duration-300"
+            className="font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-secondary transition-all duration-300"
             href="#lead-gen"
           >
             Lead Generation
           </a>
           <a
-            className="font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-[#006d3e] transition-all duration-300"
+            className="font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-secondary transition-all duration-300"
             href="#ai-agents"
           >
             AI Agents
           </a>
-          <button className="bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform">
+          <a
+            href="#contact"
+            className="bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform inline-block"
+          >
             Let&apos;s Talk Growth
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -50,22 +53,26 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden px-8 pb-8 space-y-6 bg-[#faf9f7]/95 backdrop-blur-md">
           <a
-            className="block font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-[#006d3e] transition-all duration-300"
+            className="block font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-secondary transition-all duration-300"
             href="#lead-gen"
             onClick={() => setMobileMenuOpen(false)}
           >
             Lead Generation
           </a>
           <a
-            className="block font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-[#006d3e] transition-all duration-300"
+            className="block font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-secondary transition-all duration-300"
             href="#ai-agents"
             onClick={() => setMobileMenuOpen(false)}
           >
             AI Agents
           </a>
-          <button className="bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform">
+          <a
+            href="#contact"
+            className="bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform inline-block"
+            onClick={() => setMobileMenuOpen(false)}
+          >
             Let&apos;s Talk Growth
-          </button>
+          </a>
         </div>
       )}
     </nav>

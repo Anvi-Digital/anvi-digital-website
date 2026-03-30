@@ -15,7 +15,7 @@ The palette is rooted in a "Graphite-on-Paper" philosophy. It relies on a high-c
 ### Palette Highlights
 *   **Surface (`#faf9f7`)**: Our "Paper." A slightly warm, premium white that reduces eye strain and feels more curated than pure `#FFFFFF`.
 *   **Primary (`#5e5e5e`) / On-Background (`#1a1c1b`)**: Our "Ink." Used for high-impact typography and structural elements.
-*   **Secondary (`#006d3e`)**: Our "Signal." This vibrant green is used sparingly for conversion points and critical actions.
+*   **Secondary (`#FFB703`)**: Our "Signal." This vibrant amber-gold is used sparingly for conversion points and critical actions.
 
 ### The "No-Line" Rule
 To maintain a high-end feel, **1px solid borders for sectioning are strictly prohibited.** Boundaries must be defined through:
@@ -56,12 +56,12 @@ In a brutalist-inspired system, depth is achieved through **Tonal Layering** rat
 ## 5. Components
 
 ### Buttons
-*   **Primary:** Sharp corners (`0px`). Background: `secondary` (#006d3e), Text: `on-secondary`. No shadows.
+*   **Primary:** Sharp corners (`0px`). Background: `secondary` (#FFB703), Text: `on-secondary`. No shadows.
 *   **Tertiary:** No background. Underlined text using the `secondary` color. The underline should be 2px thick to match the editorial weight.
 
 ### Input Fields
 *   **Style:** Minimalist. No bounding box. Only a bottom border (2px) using `on-surface-variant`.
-*   **States:** On focus, the bottom border transitions to the `secondary` (green) accent.
+*   **States:** On focus, the bottom border transitions to the `secondary` (amber) accent.
 
 ### Cards & Lists
 *   **Rule:** **No Divider Lines.** 

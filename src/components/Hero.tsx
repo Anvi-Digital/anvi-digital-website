@@ -22,12 +22,12 @@ export default function Hero() {
             and proprietary AI frameworks.
           </p>
           <div className="flex gap-4">
-            <button className="bg-on-background text-surface px-10 py-5 font-bold uppercase tracking-widest transition-all hover:bg-secondary">
+            <a href="#contact" className="bg-on-background text-surface px-10 py-5 font-bold uppercase tracking-widest transition-all hover:bg-secondary inline-block">
               Scale Now
-            </button>
-            <button className="border-2 border-on-background text-on-background px-10 py-5 font-bold uppercase tracking-widest transition-all hover:bg-surface-container">
+            </a>
+            <a href="#lead-gen" className="border-2 border-on-background text-on-background px-10 py-5 font-bold uppercase tracking-widest transition-all hover:bg-surface-container inline-block">
               Our Thesis
-            </button>
+            </a>
           </div>
         </div>
       </div>
