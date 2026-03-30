@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     template: "%s | ANVI DIGITAL",
   },
   description:
-    "Drive velocity with a full-stack AI-powered growth team. Expert Lead Generation, AI Agents, AI SEO, and Google Ads that deliver measurable ROI.",
+    "Drive velocity with a full-stack AI-powered growth team. Expert AI SEO, AI Agents, and Google Ads that deliver measurable ROI.",
   keywords: [
     "AI Agents",
-    "Lead Generation",
+    "AI SEO",
     "AI SEO",
     "Answer Engine Optimization",
     "AEO",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "ANVI DIGITAL",
     title: "ANVI DIGITAL | Architecting Growth Through Intelligence",
     description:
-      "Drive velocity with a full-stack AI-powered growth team. Expert Lead Generation, AI Agents, AI SEO, and Google Ads that deliver measurable ROI.",
+      "Drive velocity with a full-stack AI-powered growth team. Expert AI SEO, AI Agents, and Google Ads that deliver measurable ROI.",
     images: [
       {
         url: "/og-image.png",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ANVI DIGITAL | Architecting Growth Through Intelligence",
     description:
-      "Drive velocity with a full-stack AI-powered growth team. Expert Lead Generation, AI Agents, AI SEO, and Google Ads.",
+      "Drive velocity with a full-stack AI-powered growth team. Expert AI SEO, AI Agents, and Google Ads.",
     images: ["/og-image.png"],
     creator: "@anvidigital",
     site: "@anvidigital",
@@ -93,7 +93,7 @@ const jsonLd = {
   url: siteUrl,
   logo: `${siteUrl}/favicon.svg`,
   description:
-    "Full-stack AI-powered growth team specialising in Lead Generation, AI Agents, AI SEO, and Google Ads.",
+    "Full-stack AI-powered growth team specialising in AI SEO, AI Agents, and Google Ads.",
   contactPoint: {
     "@type": "ContactPoint",
     email: "growth@anvi.digital",
@@ -117,9 +117,9 @@ const jsonLd = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Lead Generation",
+          name: "AI SEO",
           description:
-            "AI-powered lead generation including AI SEO, AEO, Google Ads, and Paid Social.",
+            "AI-powered search optimization including AEO, Google Ads, and Paid Social.",
         },
       },
       {

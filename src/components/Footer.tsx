@@ -13,9 +13,9 @@ export default function Footer() {
             </span>
             <a
               className="text-[#faf9f7]/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
-              href="#lead-gen"
+              href="#ai-seo"
             >
-              Lead Generation
+              AI SEO
             </a>
             <a
               className="text-[#faf9f7]/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"

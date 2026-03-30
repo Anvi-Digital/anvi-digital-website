@@ -1,8 +1,8 @@
-export default function LeadGeneration() {
+export default function AISEO() {
   return (
     <section
       className="py-32 px-8 bg-surface-container-low relative overflow-hidden"
-      id="lead-gen"
+      id="ai-seo"
     >
       {/* Dot Pattern Background */}
       <div
@@ -18,7 +18,7 @@ export default function LeadGeneration() {
         <div className="mb-24 flex flex-col md:flex-row justify-between items-end gap-8">
           <div>
             <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-6">
-              The Lead
+              The SEO
               <br />
               Engine.
             </h2>

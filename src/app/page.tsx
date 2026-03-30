@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import LeadGeneration from "@/components/LeadGeneration";
+import AISEO from "@/components/AISEO";
 import AIAgents from "@/components/AIAgents";
 import SocialProof from "@/components/SocialProof";
 import TrustAndFAQ from "@/components/TrustAndFAQ";
@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <main id="main-content">
         <Hero />
-        <LeadGeneration />
+        <AISEO />
         <AIAgents />
         <SocialProof />
         <TrustAndFAQ />

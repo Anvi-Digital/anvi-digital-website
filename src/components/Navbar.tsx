@@ -19,9 +19,9 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-12">
           <a
             className="font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-secondary transition-all duration-300"
-            href="#lead-gen"
+            href="#ai-seo"
           >
-            Lead Generation
+            AI SEO
           </a>
           <a
             className="font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-secondary transition-all duration-300"
@@ -54,10 +54,10 @@ export default function Navbar() {
         <div className="md:hidden px-8 pb-8 space-y-6 bg-[#faf9f7]/95 backdrop-blur-md">
           <a
             className="block font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-secondary transition-all duration-300"
-            href="#lead-gen"
+            href="#ai-seo"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Lead Generation
+            AI SEO
           </a>
           <a
             className="block font-bold uppercase tracking-[0.2em] text-xs text-[#5e5e5e] hover:text-secondary transition-all duration-300"

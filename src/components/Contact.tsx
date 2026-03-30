@@ -66,7 +66,7 @@ export default function Contact() {
               Inquiry Type
             </label>
             <select id="inquiry-type" name="inquiry_type" className="w-full bg-transparent border-0 border-b-2 border-surface/20 focus:ring-0 focus:border-secondary transition-colors py-4 text-xl appearance-none">
-              <option className="text-on-background">Lead Generation</option>
+              <option className="text-on-background">AI SEO</option>
               <option className="text-on-background">AI Agent Building</option>
               <option className="text-on-background">Growth Consulting</option>
             </select>
