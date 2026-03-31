@@ -80,7 +80,7 @@ body {
 
 /* ─── Custom Utility Classes ─── */
 .text-giant {
-  font-size: clamp(3rem, 12vw, 10rem);
+  font-size: clamp(4.25rem, 15vw, 10rem);
   line-height: 0.85;
   letter-spacing: -0.04em;
 }

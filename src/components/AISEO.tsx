@@ -17,7 +17,7 @@ export default function AISEO() {
         {/* Section Header */}
         <div className="mb-24 flex flex-col md:flex-row justify-between items-end gap-8">
           <div>
-            <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-6">
+            <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-6">
               The SEO
               <br />
               Engine.

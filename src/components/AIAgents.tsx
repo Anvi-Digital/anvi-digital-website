@@ -4,7 +4,7 @@ export default function AIAgents() {
       <div className="max-w-screen-2xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col mb-32">
-          <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
+          <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
             Deploy AI Agents <br />
             With <span className="italic text-secondary">Measurable</span> ROI.
           </h2>

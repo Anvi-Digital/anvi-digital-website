@@ -23,7 +23,7 @@ export default function TrustAndFAQ() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
           {/* Testimonials Column */}
           <div>
-            <h2 className="text-6xl font-black uppercase mb-16">
+            <h2 className="text-5xl md:text-6xl font-black uppercase mb-16">
               The Verdict.
             </h2>
             <div className="space-y-12">
@@ -75,7 +75,7 @@ export default function TrustAndFAQ() {
 
           {/* FAQ Column */}
           <div>
-            <h2 className="text-6xl font-black uppercase mb-16">FAQ</h2>
+            <h2 className="text-5xl md:text-6xl font-black uppercase mb-16">FAQ</h2>
             <div className="divide-y divide-surface-variant">
               {faqs.map((faq) => (
                 <details key={faq.question} className="group py-6">

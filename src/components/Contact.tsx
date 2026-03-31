@@ -4,7 +4,7 @@ export default function Contact() {
       <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
         {/* Left Column — Headline & Info */}
         <div>
-          <h2 className="text-7xl font-black uppercase leading-none mb-8">
+          <h2 className="text-5xl md:text-7xl font-black uppercase leading-none mb-8">
             Ready to
             <br />
             Evolve?
