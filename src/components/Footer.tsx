@@ -80,15 +80,7 @@ export default function Footer() {
             >
               X (TWITTER)
             </a>
-            <a
-              className="text-[#faf9f7]/40 hover:text-white transition-colors"
-              href="https://github.com/anvidigital"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="ANVI DIGITAL on GitHub"
-            >
-              GITHUB
-            </a>
+
           </div>
         </div>
       </div>
