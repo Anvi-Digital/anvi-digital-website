@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="min-h-[80vh] md:min-h-screen flex flex-col pt-36 pb-16 md:pt-48 md:pb-24 px-8 max-w-screen-2xl mx-auto">
-      <div className="my-auto">
+    <section className="min-h-[80vh] md:min-h-screen flex flex-col pt-24 md:pt-24 pb-16 md:pb-24 px-4 md:px-8 max-w-screen-2xl mx-auto">
+      <div className="mt-auto w-full">
         <div className="mb-8">
           <span className="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">
             Growth Strategy &amp; Implementation
