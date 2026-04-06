@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const serviceItems = [
   { label: "SEO", href: "#seo" },
@@ -12,6 +12,30 @@ const serviceItems = [
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setServicesOpen(false);
+      }
+    }
+    if (servicesOpen) {
+      document.addEventListener("click", handleClickOutside);
+    }
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [servicesOpen]);
+
+  const openDropdown = () => {
+    if (closeTimeout.current) clearTimeout(closeTimeout.current);
+    setServicesOpen(true);
+  };
+
+  const closeDropdown = () => {
+    closeTimeout.current = setTimeout(() => setServicesOpen(false), 150);
+  };
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-surface/80 backdrop-blur-md transition-colors duration-500">
@@ -25,24 +49,36 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex flex-1 items-center justify-center space-x-12">
-          <div className="relative group">
-            <a
+          <div
+            ref={dropdownRef}
+            className="relative"
+            onMouseEnter={openDropdown}
+            onMouseLeave={closeDropdown}
+          >
+            <button
               className="font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300 flex items-center gap-1"
-              href="#services"
+              onClick={() => setServicesOpen((v) => !v)}
+              aria-expanded={servicesOpen}
+              aria-haspopup="true"
             >
               Services
-              <span className="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
-            </a>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-44 bg-surface border border-primary/10 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
-              {serviceItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="block px-5 py-3 text-sm font-bold uppercase tracking-[0.15em] text-primary hover:text-secondary hover:bg-primary/5 transition-all duration-200"
-                >
-                  {item.label}
-                </a>
-              ))}
+              <span className={`material-symbols-outlined text-base transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}>expand_more</span>
+            </button>
+            <div
+              className={`absolute top-full left-1/2 -translate-x-1/2 pt-3 w-44 transition-all duration-200 ${servicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-1"}`}
+            >
+              <div className="bg-surface border border-primary/10 shadow-lg">
+                {serviceItems.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className="block px-5 py-3 text-sm font-bold uppercase tracking-[0.15em] text-primary hover:text-secondary hover:bg-primary/5 transition-all duration-200"
+                    onClick={() => setServicesOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
           <a
