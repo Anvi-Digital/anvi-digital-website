@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full mb-24">
           <div className="flex flex-col space-y-4">
             <span className="text-white/20 uppercase tracking-widest text-xs font-bold">
-              Solutions
+              Services
             </span>
             <a
               className="text-[#faf9f7]/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
@@ -35,7 +35,7 @@ export default function Footer() {
             >
               About
             </a>
-            <a
+            {/* <a
               className="text-[#faf9f7]/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
               href="#"
             >
@@ -46,7 +46,7 @@ export default function Footer() {
               href="#"
             >
               Contact
-            </a>
+            </a> */}
           </div>
 
           <div className="lg:col-span-2">
