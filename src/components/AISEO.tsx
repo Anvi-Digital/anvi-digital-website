@@ -8,7 +8,7 @@ export default function AISEO() {
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(#1a1c1b 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(var(--color-on-surface) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
         }}
       />
@@ -23,8 +23,8 @@ export default function AISEO() {
               Engine.
             </h2>
             <p className="text-2xl max-w-xl text-on-surface-variant font-light">
-              Architecting omnipresence across the search and social graph
-              through intelligence-first frameworks.
+              A structured approach to capturing high-intent demand and turning
+              it into consistent enquiries.
             </p>
           </div>
           <div className="hidden lg:block text-9xl font-black text-on-surface/5 select-none -mb-4">
@@ -47,8 +47,8 @@ export default function AISEO() {
                 AI SEO
               </h3>
               <p className="text-xl text-on-surface-variant group-hover:text-surface/70 leading-relaxed max-w-md">
-                LLM-optimized content clusters that dominate traditional SERPs
-                and generative search engines alike.
+                Content built around how people actually search today across
+                Google and AI-driven results.
               </p>
             </div>
           </div>
@@ -66,8 +66,8 @@ export default function AISEO() {
                 AEO
               </h3>
               <p className="text-xl text-on-surface-variant group-hover:text-surface/70 leading-relaxed max-w-md">
-                Answer Engine Optimization. Ensuring your brand is the primary
-                source for modern AI-driven queries.
+                Position your business in featured answers and zero-click
+                results where decisions are made.
               </p>
             </div>
           </div>
@@ -85,8 +85,8 @@ export default function AISEO() {
                 Google Ads
               </h3>
               <p className="text-xl text-on-surface-variant group-hover:text-surface/70 leading-relaxed max-w-md">
-                High-intent capture with proprietary ML bidding strategies and
-                creative testing at extreme scale.
+                Campaigns focused on targeting the right searches and improving
+                cost per lead over time.
               </p>
             </div>
           </div>
@@ -104,8 +104,8 @@ export default function AISEO() {
                 Paid Social
               </h3>
               <p className="text-xl text-on-surface-variant group-hover:text-surface/70 leading-relaxed max-w-md">
-                Performance-engineered creative designed for conversion, scaling
-                beyond vanity metrics into real revenue.
+                Generate demand and convert it with campaigns built around real
+                business outcomes.
               </p>
             </div>
           </div>

@@ -5,8 +5,8 @@ export default function AIAgents() {
         {/* Section Header */}
         <div className="flex flex-col mb-32">
           <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
-            Deploy AI Agents <br />
-            With <span className="italic text-secondary">Measurable</span> ROI.
+            Built for <br />
+            <span className="italic text-secondary">Measurable</span> Growth.
           </h2>
           <div className="w-24 h-2 bg-on-surface" />
         </div>
@@ -22,11 +22,11 @@ export default function AIAgents() {
             </div>
             <div>
               <h3 className="text-4xl font-black uppercase mb-6 tracking-tight">
-                Discovery
+                Discover
               </h3>
               <p className="text-xl text-on-surface-variant leading-relaxed max-w-sm">
-                We audit your workflows to find the highest-leverage automation
-                opportunities. We build for ROI, not for novelty.
+                We assess your market, competition, and current performance to
+                identify real opportunities.
               </p>
             </div>
           </div>
@@ -40,11 +40,11 @@ export default function AIAgents() {
             </div>
             <div className="md:pl-12">
               <h3 className="text-4xl font-black uppercase mb-6 tracking-tight">
-                Architecture
+                Build
               </h3>
               <p className="text-xl text-on-surface-variant leading-relaxed max-w-sm">
-                Rapid prototyping of custom LLM agents, integrated via robust
-                API layers and secure RAG architectures.
+                We put the right foundations in place across SEO and paid to
+                capture demand effectively.
               </p>
             </div>
           </div>
@@ -58,11 +58,11 @@ export default function AIAgents() {
             </div>
             <div>
               <h3 className="text-4xl font-black uppercase mb-6 tracking-tight">
-                Evolve
+                Improve
               </h3>
               <p className="text-xl text-on-surface-variant leading-relaxed max-w-sm">
-                Continuous monitoring and logic refinement based on real-world
-                edge cases and performance feedback loops.
+                We refine performance continuously using real data, testing, and
+                insights.
               </p>
             </div>
           </div>
@@ -76,11 +76,11 @@ export default function AIAgents() {
             </div>
             <div className="md:pl-12">
               <h3 className="text-4xl font-black uppercase mb-6 tracking-tight">
-                Govern
+                Scale
               </h3>
               <p className="text-xl text-on-surface-variant leading-relaxed max-w-sm">
-                Enterprise-grade deployment with strict security protocols, cost
-                guardrails, and compliance oversight.
+                We focus on what works and scale it without unnecessarily
+                increasing costs.
               </p>
             </div>
           </div>
@@ -89,10 +89,10 @@ export default function AIAgents() {
         {/* Bottom CTA */}
         <div className="mt-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-2xl font-bold uppercase tracking-widest text-on-surface-variant">
-            Building agents in a budget your CFO likes.
+            Built to deliver steady growth, not short-term spikes.
           </p>
           <a href="#contact" className="bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-secondary transition-colors inline-block">
-            Start Integration
+            Start Growing
           </a>
         </div>
       </div>

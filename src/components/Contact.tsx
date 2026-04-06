@@ -5,13 +5,13 @@ export default function Contact() {
         {/* Left Column — Headline & Info */}
         <div>
           <h2 className="text-5xl md:text-7xl font-black uppercase leading-none mb-8">
-            Ready to
+            Ready to Grow
             <br />
-            Evolve?
+            Consistently?
           </h2>
           <p className="text-2xl text-surface/60 mb-12">
-            Stop guessing. Start growing. Let&apos;s build your
-            intelligence-led future today.
+            Let&apos;s build a system that brings in leads without relying on
+            guesswork.
           </p>
           <div className="space-y-4">
             <div className="flex items-center gap-4">
@@ -75,7 +75,7 @@ export default function Contact() {
             type="submit"
             className="w-full bg-secondary text-on-secondary py-6 font-black uppercase tracking-[0.2em] text-sm hover:-translate-y-1 transition-transform"
           >
-            Initialize Partnership
+            Get Started
           </button>
         </form>
       </div>
