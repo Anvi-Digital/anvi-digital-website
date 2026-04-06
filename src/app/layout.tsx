@@ -7,7 +7,7 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-space-grotesk",
-  display: "swap",
+  display: "optional",
 });
 
 const siteUrl = "https://anvi.digital";
