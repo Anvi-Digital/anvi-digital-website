@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <p className="text-[clamp(2rem,8vw,5rem)] font-bold uppercase tracking-tighter text-white/5">
+            <p className="text-[clamp(2rem,8vw,5rem)] font-bold uppercase leading-none tracking-tighter text-white/5">
               GROWTH,
               <br />
               BUILT TO LAST.
