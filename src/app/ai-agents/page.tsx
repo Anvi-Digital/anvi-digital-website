@@ -201,7 +201,7 @@ export default function AIAgentsPage() {
         </section>
 
         {/* ─── WHAT WE DO ─── */}
-        <section className="py-32 px-8 bg-surface">
+        <section className="py-32 px-8 bg-secondary/10">
           <div className="max-w-screen-2xl mx-auto">
             <div className="flex flex-col mb-24">
               <span className="font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-6 block">
@@ -467,11 +467,11 @@ export default function AIAgentsPage() {
         </section>
 
         {/* ─── POSITIONING LINE ─── */}
-        <section className="py-24 px-8 bg-surface-container-low">
+        <section className="py-24 px-8 bg-secondary">
           <div className="max-w-screen-2xl mx-auto">
-            <p className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-none text-center">
+            <p className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-none text-center text-on-secondary">
               AI works best when it&apos;s applied with{" "}
-              <span className="text-secondary">clarity</span> and{" "}
+              <span className="text-outline" style={{ WebkitTextStroke: "2px #1a1c1b" }}>clarity</span> and{" "}
               <span className="italic">purpose.</span>
             </p>
           </div>

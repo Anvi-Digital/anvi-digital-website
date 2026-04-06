@@ -3,10 +3,10 @@
 import { useState, useRef, useEffect } from "react";
 
 const serviceItems = [
-  { label: "SEO", href: "#seo" },
-  { label: "PPC", href: "#ppc" },
-  { label: "Paid Media", href: "#paid-media" },
-  { label: "Social Media", href: "#social-media" },
+  { label: "SEO", href: "/services/seo" },
+  { label: "PPC", href: "/services/ppc" },
+  { label: "Paid Media", href: "/services/paid-media" },
+  { label: "Social Media", href: "/services/social-media" },
 ];
 
 export default function Navbar() {
@@ -83,19 +83,19 @@ export default function Navbar() {
           </div>
           <a
             className="font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
-            href="#ai-agents"
+            href="/ai-agents"
           >
             AI Agents
           </a>
           <a
             className="font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
-            href="#case-studies"
+            href="/case-studies"
           >
             Case Studies
           </a>
           <a
             className="font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
-            href="#about"
+            href="/about"
           >
             About
           </a>
@@ -148,21 +148,21 @@ export default function Navbar() {
           </div>
           <a
             className="block font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
-            href="#ai-agents"
+            href="/ai-agents"
             onClick={() => setMobileMenuOpen(false)}
           >
             AI Agents
           </a>
           <a
             className="block font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
-            href="#case-studies"
+            href="/case-studies"
             onClick={() => setMobileMenuOpen(false)}
           >
             Case Studies
           </a>
           <a
             className="block font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
-            href="#about"
+            href="/about"
             onClick={() => setMobileMenuOpen(false)}
           >
             About
