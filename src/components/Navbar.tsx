@@ -18,25 +18,25 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex flex-1 items-center justify-center space-x-12">
           <a
-            className="font-bold uppercase tracking-[0.2em] text-xs text-primary hover:text-secondary transition-all duration-300"
+            className="font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
             href="#services"
           >
             Services
           </a>
           <a
-            className="font-bold uppercase tracking-[0.2em] text-xs text-primary hover:text-secondary transition-all duration-300"
+            className="font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
             href="#ai-agents"
           >
             AI Agents
           </a>
           <a
-            className="font-bold uppercase tracking-[0.2em] text-xs text-primary hover:text-secondary transition-all duration-300"
+            className="font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
             href="#case-studies"
           >
             Case Studies
           </a>
           <a
-            className="font-bold uppercase tracking-[0.2em] text-xs text-primary hover:text-secondary transition-all duration-300"
+            className="font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
             href="#about"
           >
             About
@@ -66,28 +66,28 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden px-8 pb-8 space-y-6 bg-surface/95 backdrop-blur-md">
           <a
-            className="block font-bold uppercase tracking-[0.2em] text-xs text-primary hover:text-secondary transition-all duration-300"
+            className="block font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
             href="#services"
             onClick={() => setMobileMenuOpen(false)}
           >
             Services
           </a>
           <a
-            className="block font-bold uppercase tracking-[0.2em] text-xs text-primary hover:text-secondary transition-all duration-300"
+            className="block font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
             href="#ai-agents"
             onClick={() => setMobileMenuOpen(false)}
           >
             AI Agents
           </a>
           <a
-            className="block font-bold uppercase tracking-[0.2em] text-xs text-primary hover:text-secondary transition-all duration-300"
+            className="block font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
             href="#case-studies"
             onClick={() => setMobileMenuOpen(false)}
           >
             Case Studies
           </a>
           <a
-            className="block font-bold uppercase tracking-[0.2em] text-xs text-primary hover:text-secondary transition-all duration-300"
+            className="block font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300"
             href="#about"
             onClick={() => setMobileMenuOpen(false)}
           >
