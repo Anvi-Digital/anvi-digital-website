@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-[#faf9f7]/80 backdrop-blur-md transition-colors duration-500">
-      <div className="flex items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+      <div className="flex items-center justify-between w-full px-8 py-6 max-w-screen-2xl mx-auto">
         <a
           className="text-2xl font-black tracking-tighter text-[#1a1c1b] flex-shrink-0"
           href="/"
@@ -52,7 +52,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden ml-auto text-on-surface"
+          className="md:hidden text-on-surface"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
