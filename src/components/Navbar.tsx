@@ -3,8 +3,6 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
-interface INavbarProps {}
-
 const serviceItems = [
   { label: "SEO", href: "/services/seo" },
   { label: "PPC", href: "/services/ppc" },
@@ -18,7 +16,7 @@ const mainNavItems = [
   { label: "About", href: "/about" },
 ];
 
-const Navbar = (props: INavbarProps) => {
+const Navbar = () => {
   // State variables
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
@@ -207,7 +205,10 @@ const Navbar = (props: INavbarProps) => {
 
   // Main return block
   return (
-    <nav className="sticky top-0 z-50 w-full bg-surface/80 backdrop-blur-md transition-colors duration-500">
+    <nav
+      suppressHydrationWarning
+      className="sticky top-0 z-50 w-full bg-surface/80 backdrop-blur-md transition-colors duration-500"
+    >
       <div className="flex items-center justify-between w-full px-8 py-6 max-w-screen-2xl mx-auto">
         {renderLogo()}
         {renderDesktopNav()}

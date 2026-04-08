@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Space_Grotesk } from "next/font/google";
+import MainLayout from "@/components/MainLayout";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -77,10 +78,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon.jpg", type: "image/svg+xml" },
+      { url: "/favicon.jpg", sizes: "32x32" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    apple: [{ url: "/favicon.jpg", sizes: "180x180" }],
   },
   manifest: "/manifest.json",
   category: "technology",
@@ -91,7 +92,7 @@ const jsonLd = {
   "@type": "Organization",
   name: "ANVI DIGITAL",
   url: siteUrl,
-  logo: `${siteUrl}/favicon.svg`,
+  logo: `${siteUrl}/favicon.jpg`,
   description:
     "Full-stack AI-powered growth team specialising in AI SEO, AI Agents, and Google Ads.",
   contactPoint: {
@@ -166,14 +167,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body
-        className="bg-surface text-on-surface antialiased overflow-x-hidden"
-        suppressHydrationWarning
-      >
-        <a href="#main-content" className="skip-nav">
-          Skip to main content
-        </a>
-        {children}
+      <body className="bg-surface text-on-surface antialiased overflow-x-hidden">
+        <MainLayout>{children}</MainLayout>
         {/* Inject Material Symbols stylesheet after page is interactive — avoids render blocking */}
         <Script
           id="material-symbols-loader"

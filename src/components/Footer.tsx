@@ -1,9 +1,13 @@
+import PageContainer from "./PageContainer";
+
 export default function Footer() {
   return (
-    <footer className="bg-on-surface py-24 px-8 w-full">
-      <div className="max-w-screen-2xl mx-auto w-full">
+    <footer className="bg-on-surface w-full">
+      <PageContainer as="div" padding="md" className="w-full">
         {/* Logo */}
-        <h2 className="text-5xl md:text-6xl font-black text-white mb-12">ANVI DIGITAL</h2>
+        <h2 className="text-5xl md:text-6xl font-black text-white mb-12">
+          ANVI DIGITAL
+        </h2>
 
         {/* Link Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full mb-24">
@@ -82,10 +86,9 @@ export default function Footer() {
             >
               X (TWITTER)
             </a>
-
           </div>
         </div>
-      </div>
+      </PageContainer>
     </footer>
   );
 }

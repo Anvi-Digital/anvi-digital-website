@@ -1,19 +1,22 @@
+import PageContainer from "./PageContainer";
+
 export default function AISEO() {
   return (
-    <section
-      className="py-32 px-8 bg-surface-container-low relative overflow-hidden"
+    <PageContainer
       id="ai-seo"
+      className="bg-surface-container-low relative overflow-hidden"
     >
       {/* Dot Pattern Background */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(var(--color-on-surface) 1px, transparent 1px)",
+          backgroundImage:
+            "radial-gradient(var(--color-on-surface) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
         }}
       />
 
-      <div className="max-w-screen-2xl mx-auto relative z-10">
+      <div className="relative z-10">
         {/* Section Header */}
         <div className="mb-24 flex flex-col md:flex-row justify-between items-end gap-8">
           <div>
@@ -111,6 +114,6 @@ export default function AISEO() {
           </div>
         </div>
       </div>
-    </section>
+    </PageContainer>
   );
 }

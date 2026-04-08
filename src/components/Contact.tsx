@@ -1,7 +1,9 @@
+import PageContainer from "./PageContainer";
+
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 px-8 bg-on-background text-surface">
-      <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+    <PageContainer id="contact" className="bg-on-background text-surface">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
         {/* Left Column — Headline & Info */}
         <div>
           <h2 className="text-5xl md:text-7xl font-black uppercase leading-none mb-8">
@@ -18,7 +20,12 @@ export default function Contact() {
               <span className="material-symbols-outlined text-secondary">
                 mail
               </span>
-              <a href="mailto:growth@anvi.digital" className="text-xl hover:text-secondary transition-colors">growth@anvi.digital</a>
+              <a
+                href="mailto:growth@anvi.digital"
+                className="text-xl hover:text-secondary transition-colors"
+              >
+                growth@anvi.digital
+              </a>
             </div>
             <div className="flex items-center gap-4">
               <span className="material-symbols-outlined text-secondary">
@@ -34,7 +41,10 @@ export default function Contact() {
         {/* Right Column — Form */}
         <form className="space-y-8">
           <div>
-            <label htmlFor="full-name" className="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40">
+            <label
+              htmlFor="full-name"
+              className="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40"
+            >
               Full Name
             </label>
             <input
@@ -48,7 +58,10 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label htmlFor="work-email" className="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40">
+            <label
+              htmlFor="work-email"
+              className="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40"
+            >
               Work Email
             </label>
             <input
@@ -62,10 +75,17 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label htmlFor="inquiry-type" className="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40">
+            <label
+              htmlFor="inquiry-type"
+              className="block uppercase tracking-widest text-xs font-bold mb-2 text-surface/40"
+            >
               Inquiry Type
             </label>
-            <select id="inquiry-type" name="inquiry_type" className="w-full bg-transparent border-0 border-b-2 border-surface/20 focus:ring-0 focus:border-secondary transition-colors py-4 text-xl appearance-none">
+            <select
+              id="inquiry-type"
+              name="inquiry_type"
+              className="w-full bg-transparent border-0 border-b-2 border-surface/20 focus:ring-0 focus:border-secondary transition-colors py-4 text-xl appearance-none"
+            >
               <option className="text-on-background">AI SEO</option>
               <option className="text-on-background">AI Agent Building</option>
               <option className="text-on-background">Growth Consulting</option>
@@ -79,6 +99,6 @@ export default function Contact() {
           </button>
         </form>
       </div>
-    </section>
+    </PageContainer>
   );
 }
