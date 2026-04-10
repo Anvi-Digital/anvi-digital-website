@@ -11,10 +11,7 @@ export default function SEOServicesPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <PageContainer
-        padding="lg"
-        className="min-h-[80vh] md:min-h-screen flex flex-col"
-      >
+      <PageContainer className="min-h-[80vh] md:min-h-screen flex flex-col">
         <div className="mt-auto w-full">
           <div className="mb-8">
             <span className="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">

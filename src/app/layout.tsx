@@ -167,7 +167,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-surface text-on-surface antialiased overflow-x-hidden">
+      <body
+        suppressHydrationWarning
+        className="bg-surface text-on-surface antialiased overflow-x-hidden"
+      >
         <MainLayout>{children}</MainLayout>
         {/* Inject Material Symbols stylesheet after page is interactive — avoids render blocking */}
         <Script
