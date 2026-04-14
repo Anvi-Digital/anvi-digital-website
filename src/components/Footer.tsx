@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PageContainer from "./PageContainer";
+import textLogo from "../../public/images/WY-text-logo.svg";
 
 export default function Footer() {
   return (
@@ -7,13 +8,7 @@ export default function Footer() {
       <PageContainer as="div" padding="md" className="w-full">
         {/* Logo */}
         <div className="mb-12">
-          <Image
-            src="/images/WY-text-logo.svg"
-            alt="ANVI DIGITAL"
-            width={380}
-            height={50}
-            className="aspect-auto w-auto brightness-0 invert"
-          />
+          <Image src={textLogo} alt="ANVI DIGITAL" width={380} height={50} />
         </div>
 
         {/* Link Grid */}
