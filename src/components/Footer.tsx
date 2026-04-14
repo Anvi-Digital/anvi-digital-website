@@ -1,3 +1,4 @@
+import Image from "next/image";
 import PageContainer from "./PageContainer";
 
 export default function Footer() {
@@ -5,9 +6,15 @@ export default function Footer() {
     <footer className="bg-on-surface w-full">
       <PageContainer as="div" padding="md" className="w-full">
         {/* Logo */}
-        <h2 className="text-5xl md:text-6xl font-black text-white mb-12">
-          ANVI DIGITAL
-        </h2>
+        <div className="mb-12">
+          <Image
+            src="/images/WY-text-logo.svg"
+            alt="ANVI DIGITAL"
+            width={380}
+            height={50}
+            className="aspect-auto w-auto brightness-0 invert"
+          />
+        </div>
 
         {/* Link Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full mb-24">
@@ -63,7 +70,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-12 w-full flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="border-t border-white/10 pt-8 w-full flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-surface/40 uppercase tracking-widest text-xs font-bold">
             &copy; 2026 ANVI DIGITAL. GROWTH, BUILT TO LAST.
           </p>
@@ -76,15 +83,6 @@ export default function Footer() {
               aria-label="ANVI DIGITAL on LinkedIn"
             >
               LINKEDIN
-            </a>
-            <a
-              className="text-surface/40 hover:text-white transition-colors"
-              href="https://twitter.com/anvidigital"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="ANVI DIGITAL on X (Twitter)"
-            >
-              X (TWITTER)
             </a>
           </div>
         </div>

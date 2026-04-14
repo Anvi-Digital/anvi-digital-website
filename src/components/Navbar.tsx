@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const serviceItems = [
   { label: "SEO", href: "/services/seo" },
@@ -73,7 +74,13 @@ const Navbar = () => {
         className="text-2xl font-black tracking-tighter text-on-surface shrink-0"
         href="/"
       >
-        ANVI DIGITAL
+        <Image
+          src="/images/BY-text-logo.svg"
+          alt="ANVI DIGITAL"
+          width={250}
+          height={35}
+          className="h-10 w-auto brightness-0 invert"
+        />
       </Link>
     );
   };
