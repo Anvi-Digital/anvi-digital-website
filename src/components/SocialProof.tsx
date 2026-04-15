@@ -13,7 +13,7 @@ const clients = [
 
 export default function SocialProof() {
   return (
-    <PageContainer padding="md" className="border-y border-surface-variant">
+    <PageContainer className="border-y border-surface-variant">
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="md:w-1/3 text-center md:text-left">
           <h2 className="text-5xl font-black uppercase">
