@@ -66,20 +66,9 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 w-full flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-surface/40 uppercase tracking-widest text-xs font-bold">
-            &copy; 2026 ANVI DIGITAL. GROWTH, BUILT TO LAST.
+          <p className="text-surface/40 uppercase tracking-widest text-xs font-bold mx-auto">
+            &copy; 2026 ANVI DIGITAL.
           </p>
-          <div className="flex gap-8">
-            <a
-              className="text-surface/40 hover:text-white transition-colors"
-              href="https://www.linkedin.com/company/anvidigital"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="ANVI DIGITAL on LinkedIn"
-            >
-              LINKEDIN
-            </a>
-          </div>
         </div>
       </PageContainer>
     </footer>

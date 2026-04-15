@@ -129,7 +129,7 @@ export default function Contact() {
                 href="mailto:growth@anvi.digital"
                 className="text-xl hover:text-secondary transition-colors"
               >
-                growth@anvi.digital
+                hello@anvidigital.com.au
               </a>
             </div>
             <div className="flex items-center gap-4">
@@ -137,7 +137,7 @@ export default function Contact() {
                 location_on
               </span>
               <span className="text-xl">
-                18 Australis st, campbelltown NSW 2560
+                18 Australis St, Campbelltown NSW 2560, Australia
               </span>
             </div>
           </div>
