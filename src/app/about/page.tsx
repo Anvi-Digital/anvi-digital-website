@@ -11,10 +11,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <PageContainer
-        padding="lg"
-        className="min-h-[80vh] md:min-h-screen flex flex-col"
-      >
+      <PageContainer className="min-h-[80vh] md:min-h-screen flex flex-col">
         <div className="mt-auto w-full">
           <div className="mb-8">
             <span className="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">
@@ -310,7 +307,7 @@ export default function AboutPage() {
         <span className="font-label uppercase tracking-[0.3em] text-xs text-on-secondary font-bold mb-8 block">
           The Vision
         </span>
-        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter max-w-4xl leading-tight mb-8 text-on-secondary">
+        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter max-w-4xl mx-auto leading-tight mb-8 text-on-secondary">
           Growth becomes far more predictable when it is built on the right
           system.
         </h2>

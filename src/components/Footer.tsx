@@ -5,7 +5,7 @@ import textLogo from "../../public/images/WY-text-logo.svg";
 export default function Footer() {
   return (
     <footer className="bg-on-surface w-full">
-      <PageContainer as="div" padding="md" className="w-full">
+      <PageContainer as="div" className="pb-8 w-full">
         {/* Logo */}
         <div className="mb-12">
           <Image src={textLogo} alt="ANVI DIGITAL" width={380} height={50} />

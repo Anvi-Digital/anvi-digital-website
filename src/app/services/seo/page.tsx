@@ -11,13 +11,13 @@ export default function SEOServicesPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <PageContainer className="min-h-[80vh] md:min-h-screen flex flex-col">
+      <PageContainer className="flex flex-col pt-8">
         <div className="mt-auto w-full">
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <span className="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">
               SEARCH ENGINE OPTIMISATION
             </span>
-          </div>
+          </div> */}
           <h1 className="text-giant font-black uppercase mb-12">
             Own Your
             <br />

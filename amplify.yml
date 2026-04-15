@@ -6,12 +6,9 @@ frontend:
         - npm ci
     build:
       commands:
+        - env | grep -e MAILJET_API_KEY -e MAILJET_SECRET_KEY -e FROM_EMAIL -e TO_EMAIL -e RECAPTCHA_SECRET_KEY -e NEXT_PUBLIC_RECAPTCHA_SITE_KEY -e NEXT_PUBLIC_GA_MEASUREMENT_ID -e NEXT_PUBLIC_GTM_ID -e NODE_ENV -e AGENT_DEMO_PASSWORD >> .env.production || true
         - npm run build
   artifacts:
     baseDirectory: .next
     files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
-      - .next/cache/**/*
+      - "**/*"

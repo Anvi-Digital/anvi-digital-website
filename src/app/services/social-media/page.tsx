@@ -95,17 +95,14 @@ export default function SocialMediaPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <PageContainer
-        padding="lg"
-        className="min-h-[80vh] md:min-h-screen flex flex-col"
-      >
+      <PageContainer className="min-h-[80vh] md:min-h-screen flex flex-col">
         <div className="mt-auto w-full">
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <span className="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">
               PAID SOCIAL. DEMAND GENERATION. CONVERSION.
             </span>
-          </div>
-          <h1 className="text-giant font-black uppercase mb-12">
+          </div> */}
+          <h1 className="text-9xl font-black uppercase mb-12">
             Stop Boosting
             <br />
             <span className="text-primary-container">Posts.</span> Start
@@ -142,13 +139,10 @@ export default function SocialMediaPage() {
       </PageContainer>
 
       {/* ─── STATS ─── */}
-      <PageContainer padding="md" className="border-y border-surface-variant">
+      <PageContainer className="border-y border-surface-variant py-0!">
         <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-surface-variant">
           {stats.map((s) => (
-            <div
-              key={s.label}
-              className="py-8 md:py-0 md:px-16 first:pl-0 last:pr-0"
-            >
+            <div key={s.label} className="py-8 md:px-16 first:pl-0 last:pr-0">
               <p className="text-6xl md:text-7xl font-black text-secondary mb-2">
                 {s.value}
               </p>
@@ -401,7 +395,7 @@ export default function SocialMediaPage() {
       </PageContainer>
 
       {/* ─── CTA STRIP ─── */}
-      <PageContainer padding="md" className="bg-secondary">
+      <PageContainer className="bg-secondary">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
             Ready to turn

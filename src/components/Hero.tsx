@@ -2,13 +2,13 @@ import PageContainer from "./PageContainer";
 
 export default function Hero() {
   return (
-    <PageContainer>
+    <PageContainer className="pt-6">
       <div className="mt-auto w-full">
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <span className="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">
             SEO. PAID MEDIA. PERFORMANCE.
           </span>
-        </div>
+        </div> */}
 
         <h1 className="text-giant font-black uppercase mb-12">
           Stop Buying

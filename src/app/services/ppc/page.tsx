@@ -69,15 +69,14 @@ export default function PPCPage() {
   return (
     <>
       {/* Hero */}
-      <PageContainer padding="md">
-        <h1 className="text-giant font-black uppercase mb-12">
-          <span className="block text-on-surface">STOP BUYING</span>
-          <span className="block text-on-surface md:mb-4 lg:mb-6">CLICKS.</span>
-          <span className="block text-secondary">START BUYING</span>
-          <span className="block text-secondary">CUSTOMERS.</span>
+      <PageContainer className="py-16! text-center">
+        <h1 className="text-8xl font-black uppercase mb-12">
+          <span className="block text-on-surface">STOP BUYING CLICKS.</span>
+          <span className="block text-secondary">START BUYING CUSTOMERS.</span>
         </h1>
-        <div className="max-w-4xl border-l-[6px] border-on-surface pl-8 md:pl-10 lg:pl-12 py-2 ml-2 md:ml-[calc(clamp(4.25rem,15vw,10rem)*0.6)]">
-          <p className="text-lg md:text-2xl font-normal leading-relaxed mb-8 text-on-surface/90">
+
+        <div className="max-w-3xl pl-8 md:pl-10 lg:pl-12 py-2  mx-auto">
+          <p className="text-md md:text-xl font-normal leading-relaxed mb-8 text-on-surface/90">
             PPC that reduces Customer Acquisition Cost (CAC) and scales revenue
             predictably. We treat your budget like our own product—optimising
             for LTV, eliminating waste, and targeting exact moments of user
@@ -93,13 +92,10 @@ export default function PPCPage() {
       </PageContainer>
 
       {/* Stats */}
-      <PageContainer padding="md" className="border-y border-surface-variant">
+      <PageContainer className="border-y border-surface-variant py-0!">
         <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-surface-variant">
           {stats.map((s) => (
-            <div
-              key={s.label}
-              className="py-8 md:py-0 md:px-16 first:pl-0 last:pr-0"
-            >
+            <div key={s.label} className="py-8 md:px-16 first:pl-0 last:pr-0">
               <p className="text-6xl md:text-7xl font-black text-secondary mb-2">
                 {s.value}
               </p>
@@ -160,7 +156,7 @@ export default function PPCPage() {
           {process.map((p, i) => (
             <div
               key={p.step}
-              className={`p-12 md:p-20 border-b-2 border-on-surface flex flex-col justify-between ${i % 2 === 0 ? "md:border-r-2" : ""} ${i % 2 === 1 ? "bg-surface-container-low" : ""}`}
+              className={`p-12 md:p-20 border-b-2 border-on-surface flex flex-col ${i % 2 === 0 ? "md:border-r-2" : ""} ${i % 2 === 1 ? "bg-surface-container-low" : ""}`}
             >
               <span className="text-8xl md:text-[10rem] font-black leading-none text-outline mb-12 block">
                 {p.step}
@@ -179,7 +175,7 @@ export default function PPCPage() {
       </PageContainer>
 
       {/* CTA Strip */}
-      <PageContainer padding="md" className="bg-secondary">
+      <PageContainer className="bg-secondary">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
             Ready to stop

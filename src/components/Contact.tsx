@@ -103,7 +103,11 @@ export default function Contact() {
   };
 
   return (
-    <PageContainer id="contact" className="bg-on-background text-surface">
+    <PageContainer
+      id="contact"
+      className="bg-on-background text-surface"
+      suppressHydrationWarning
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
         {/* Left Column — Headline & Info */}
         <div>
@@ -133,7 +137,7 @@ export default function Contact() {
                 location_on
               </span>
               <span className="text-xl">
-                London &bull; San Francisco &bull; Remote
+                18 Australis st, campbelltown NSW 2560
               </span>
             </div>
           </div>

@@ -89,25 +89,18 @@ export default function AIAgentsPage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <PageContainer
-        padding="lg"
-        className="min-h-[80vh] md:min-h-screen flex flex-col"
-      >
+      <PageContainer className="min-h-[80vh] md:min-h-screen flex flex-col justify-center items-center py-0!">
         <div className="mt-auto w-full">
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <span className="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">
               AI AGENTS. AUTOMATION. INTELLIGENCE.
             </span>
-          </div>
-          <h1 className="text-giant font-black uppercase mb-12">
-            AI Agents
-            <br />
-            Designed for
+          </div> */}
+          <h1 className="text-8xl font-black uppercase mb-12">
+            AI Agents Designed for
             <br />
             <span className="text-secondary">Real</span>{" "}
-            <span className="text-primary-container">Business</span>
-            <br />
-            Work.
+            <span className="text-primary-container">Business</span> Work.
           </h1>
           <div className="stagger-grid">
             <div className="col-start-1 col-span-12 md:col-start-7 md:col-span-6 border-l-4 border-on-surface pl-8 py-4">
@@ -432,7 +425,7 @@ export default function AIAgentsPage() {
       </PageContainer>
 
       {/* ─── POSITIONING LINE ─── */}
-      <PageContainer padding="md" className="bg-secondary">
+      <PageContainer className="bg-secondary">
         <p className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-none text-center text-on-secondary">
           AI works best when it&apos;s applied with{" "}
           <span
@@ -475,10 +468,7 @@ export default function AIAgentsPage() {
       </PageContainer>
 
       {/* ─── FOOTER LINE ─── */}
-      <PageContainer
-        padding="sm"
-        className="bg-on-background border-t border-surface/10"
-      >
+      <PageContainer className="bg-on-background border-t border-surface/10">
         <p className="text-surface/30 uppercase tracking-[0.3em] text-sm font-bold text-center">
           Practical AI, built for real outcomes.
         </p>
