@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import textLogo from "../../public/images/BY-text-logo.svg";
+import textLogo from "../../public/images/BY-WordMark.svg";
 const serviceItems = [
   { label: "SEO", href: "/services/seo" },
   { label: "PPC", href: "/services/ppc" },

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PageContainer from "./PageContainer";
-import textLogo from "../../public/images/WY-text-logo.svg";
+import textLogo from "../../public/images/WY-WordMark.svg";
 
 export default function Footer() {
   return (
