@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import PageContainer from "@/components/PageContainer";
+import {
+  SquareBoxShape,
+  StarCurvedShape,
+  RoundShape,
+  HalfRoundShape,
+} from "@/assets/shapes";
 
 export const metadata: Metadata = {
   title: "SEO Services | Anvi Digital",
@@ -13,11 +19,6 @@ export default function SEOServicesPage() {
       {/* ─── HERO ─── */}
       <PageContainer className="flex flex-col pt-8">
         <div className="mt-auto w-full">
-          {/* <div className="mb-8">
-            <span className="font-label uppercase tracking-[0.3em] text-sm text-secondary font-bold">
-              SEARCH ENGINE OPTIMISATION
-            </span>
-          </div> */}
           <h1 className="text-giant font-black uppercase mb-12">
             Own Your
             <br />
@@ -37,13 +38,13 @@ export default function SEOServicesPage() {
               </p>
               <div className="flex flex-col md:flex-row flex-wrap gap-4 mt-8 md:mt-12">
                 <a
-                  href="#how-it-works"
+                  href="/#how-it-works"
                   className="bg-on-background text-surface px-6 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:bg-secondary text-center inline-block"
                 >
                   Start Growing
                 </a>
                 <a
-                  href="#contact-cta"
+                  href="/#contact"
                   className="border-2 border-on-background text-on-background px-6 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:bg-surface-container text-center inline-block"
                 >
                   Get a Free Audit
@@ -138,6 +139,7 @@ export default function SEOServicesPage() {
               desc: "Built for scale, complexity, and large platforms. We engineer technical SEO architectures that support thousands of pages seamlessly without breaking.",
               border: "border-secondary",
               hover: "hover:bg-on-background hover:text-surface",
+              icon: SquareBoxShape,
               tags: [
                 "Technical SEO at scale",
                 "Site architecture",
@@ -149,6 +151,7 @@ export default function SEOServicesPage() {
               desc: "Optimise for Answer & Generative Engines (AI Overview, Copilot). A crucial emerging channel for maintaining visibility.",
               border: "border-primary-container",
               hover: "hover:bg-secondary hover:text-on-secondary",
+              icon: StarCurvedShape,
               tags: ["Answer Engines", "Generative Content", "Structured Data"],
             },
             {
@@ -157,6 +160,7 @@ export default function SEOServicesPage() {
               border: "border-on-surface",
               hover:
                 "hover:bg-primary-container hover:text-on-primary-container",
+              icon: RoundShape,
               tags: ["Business Profile", "Map Visibility", "Local Landings"],
             },
             {
@@ -164,28 +168,36 @@ export default function SEOServicesPage() {
               desc: "Build uncompromising authority through high-quality media outreach, placements, and content-led strategic campaigns.",
               border: "border-secondary",
               hover: "hover:bg-on-background hover:text-surface",
+              icon: HalfRoundShape,
               tags: ["Media Outreach", "Link Acquisition", "Brand Authority"],
             },
           ].map((card) => (
             <div
               key={card.title}
-              className={`group relative bg-surface p-10 lg:p-14 border-l-8 ${card.border} flex flex-col ${card.hover} transition-all duration-500 min-h-[340px]`}
+              className={`group relative bg-surface p-10 lg:p-14 border-l-8 ${card.border} flex flex-col ${card.hover} transition-all duration-500 min-h-[340px] overflow-hidden`}
             >
-              <h3 className="text-3xl font-black uppercase leading-none mb-6">
-                {card.title}
-              </h3>
-              <p className="text-lg font-light leading-relaxed mb-8 flex-grow">
-                {card.desc}
-              </p>
-              <div className="flex flex-wrap gap-2 mt-auto">
-                {card.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs uppercase tracking-widest font-bold border border-current px-3 py-1 opacity-70"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* background watermark shape - subtle and set to the end */}
+              <div className="absolute -right-20 -bottom-20 w-80 h-80 text-on-surface opacity-10 group-hover:opacity-20 group-hover:scale-105 transition-all duration-1000 pointer-events-none">
+                <card.icon className="w-full h-full text-primary" />
+              </div>
+
+              <div className="relative z-10 h-full flex flex-col">
+                <h3 className="text-3xl font-black uppercase leading-none mb-6">
+                  {card.title}
+                </h3>
+                <p className="text-lg font-light leading-relaxed mb-8 flex-grow">
+                  {card.desc}
+                </p>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {card.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs uppercase tracking-widest font-bold border border-current px-3 py-1 opacity-70"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
