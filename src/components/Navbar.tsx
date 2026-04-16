@@ -194,7 +194,7 @@ const Navbar = () => {
           </Link>
         ))}
         <Link
-          href="#contact"
+          href="/#contact"
           className="bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform inline-block"
           onClick={handleCloseAll}
         >
@@ -215,7 +215,7 @@ const Navbar = () => {
         {renderDesktopNav()}
 
         <Link
-          href="#contact"
+          href="/#contact"
           className="hidden md:inline-block shrink-0 bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform"
         >
           Let&apos;s Talk Growth

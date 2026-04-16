@@ -371,7 +371,7 @@ export default function SEOServicesPage() {
             an organic growth system tailored to scale you.
           </p>
           <a
-            href="/contact"
+            href="/#contact"
             className="bg-secondary text-on-secondary px-8 py-5 md:px-12 md:py-6 text-base md:text-lg font-bold uppercase tracking-widest transition-all hover:bg-surface hover:text-on-surface inline-block"
           >
             Get a Free SEO Audit

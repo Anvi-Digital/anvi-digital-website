@@ -19,13 +19,13 @@ export default function Footer() {
             </span>
             <a
               className="text-surface/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
-              href="#ai-seo"
+              href="/services/seo"
             >
               AI SEO
             </a>
             <a
               className="text-surface/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
-              href="#ai-agents"
+              href="/ai-agents"
             >
               AI Agents
             </a>
@@ -37,7 +37,7 @@ export default function Footer() {
             </span>
             <a
               className="text-surface/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
-              href="#"
+              href="/about"
             >
               About
             </a>
