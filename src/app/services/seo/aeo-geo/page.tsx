@@ -15,15 +15,6 @@ export default function AEOGEOPage() {
     <>
       {/* ─── HERO ─── */}
       <PageContainer className="pt-24 pb-12">
-        <Link
-          href="/services/seo"
-          className="font-label uppercase tracking-widest text-xs text-secondary font-bold mb-8 inline-flex items-center gap-2 group"
-        >
-          <span className="group-hover:-translate-x-1 transition-transform">
-            ←
-          </span>{" "}
-          Back to SEO
-        </Link>
         <div className="max-w-4xl">
           <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-12">
             AEO /
