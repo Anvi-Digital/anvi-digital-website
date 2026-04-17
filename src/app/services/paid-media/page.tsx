@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import PageContainer from "@/components/PageContainer";
-import Contact from "@/components/Contact";
-
+import ContactLink from "@/components/ContactLink";
 export const metadata: Metadata = {
   title: "Paid Media | Full-Funnel Media Buying",
   description:
@@ -93,12 +92,9 @@ export default function PaidMediaPage() {
               Full-funnel paid media that creates demand at the top and captures
               it at the bottom — working as one system.
             </p>
-            <a
-              href="#contact"
-              className="bg-on-background text-surface px-10 py-5 font-bold uppercase tracking-widest text-sm hover:bg-secondary transition-colors inline-block"
-            >
+            <ContactLink className="bg-on-background text-surface px-10 py-5 font-bold uppercase tracking-widest text-sm hover:bg-secondary transition-colors inline-block">
               Start a Campaign
-            </a>
+            </ContactLink>
           </div>
         </div>
       </PageContainer>
@@ -238,16 +234,11 @@ export default function PaidMediaPage() {
             <br />
             your market?
           </h2>
-          <a
-            href="#contact"
-            className="shrink-0 bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-surface hover:text-on-background transition-colors inline-block"
-          >
+          <ContactLink className="shrink-0 bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-surface hover:text-on-background transition-colors inline-block">
             Start a Campaign
-          </a>
+          </ContactLink>
         </div>
       </PageContainer>
-
-      <Contact />
     </>
   );
 }

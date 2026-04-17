@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageContainer from "@/components/PageContainer";
+import ContactLink from "@/components/ContactLink";
 import {
   SquareBoxShape,
   StarCurvedShape,
@@ -43,12 +45,9 @@ export default function SEOServicesPage() {
                 >
                   Start Growing
                 </a>
-                <a
-                  href="/#contact"
-                  className="border-2 border-on-background text-on-background px-6 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:bg-surface-container text-center inline-block"
-                >
+                <ContactLink className="border-2 border-on-background text-on-background px-6 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:bg-surface-container text-center inline-block">
                   Get a Free Audit
-                </a>
+                </ContactLink>
               </div>
             </div>
           </div>
@@ -140,6 +139,7 @@ export default function SEOServicesPage() {
               border: "border-secondary",
               hover: "hover:bg-on-background hover:text-surface",
               icon: SquareBoxShape,
+              href: "/services/seo/enterprise",
               tags: [
                 "Technical SEO at scale",
                 "Site architecture",
@@ -152,6 +152,7 @@ export default function SEOServicesPage() {
               border: "border-primary-container",
               hover: "hover:bg-secondary hover:text-on-secondary",
               icon: StarCurvedShape,
+              href: "/services/seo/aeo-geo",
               tags: ["Answer Engines", "Generative Content", "Structured Data"],
             },
             {
@@ -161,19 +162,26 @@ export default function SEOServicesPage() {
               hover:
                 "hover:bg-primary-container hover:text-on-primary-container",
               icon: RoundShape,
+              href: "/services/seo/local",
               tags: ["Business Profile", "Map Visibility", "Local Landings"],
             },
             {
-              title: "Digital PR",
-              desc: "Build uncompromising authority through high-quality media outreach, placements, and content-led strategic campaigns.",
+              title: "Ecommerce SEO",
+              desc: "Dominating search for online stores. We focus on conversion-driven architectures, product page optimization, and scalable collection growth.",
               border: "border-secondary",
               hover: "hover:bg-on-background hover:text-surface",
               icon: HalfRoundShape,
-              tags: ["Media Outreach", "Link Acquisition", "Brand Authority"],
+              href: "/services/seo/ecommerce",
+              tags: [
+                "Product Optimization",
+                "Collection Scaling",
+                "Revenue Growth",
+              ],
             },
           ].map((card) => (
-            <div
+            <Link
               key={card.title}
+              href={card.href}
               className={`group relative bg-surface p-10 lg:p-14 border-l-8 ${card.border} flex flex-col ${card.hover} transition-all duration-500 min-h-[340px] overflow-hidden`}
             >
               {/* background watermark shape - subtle and set to the end */}
@@ -199,7 +207,7 @@ export default function SEOServicesPage() {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </PageContainer>
@@ -382,12 +390,9 @@ export default function SEOServicesPage() {
             Stop relying on increasingly expensive paid ads. Let&apos;s engineer
             an organic growth system tailored to scale you.
           </p>
-          <a
-            href="/#contact"
-            className="bg-secondary text-on-secondary px-8 py-5 md:px-12 md:py-6 text-base md:text-lg font-bold uppercase tracking-widest transition-all hover:bg-surface hover:text-on-surface inline-block"
-          >
+          <ContactLink className="bg-secondary text-on-secondary px-8 py-5 md:px-12 md:py-6 text-base md:text-lg font-bold uppercase tracking-widest transition-all hover:bg-surface hover:text-on-surface inline-block">
             Get a Free SEO Audit
-          </a>
+          </ContactLink>
         </div>
       </PageContainer>
     </>

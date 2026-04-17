@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { caseStudies } from "@/data/caseStudies";
-import Contact from "@/components/Contact";
-
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -272,8 +270,6 @@ export default async function CaseStudyDetailPage({ params }: Props) {
           </div>
         </Link>
       </section>
-
-      <Contact />
     </>
   );
 }

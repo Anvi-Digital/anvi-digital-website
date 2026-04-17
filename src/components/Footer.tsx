@@ -1,14 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import PageContainer from "./PageContainer";
-import textLogo from "../../public/images/WY-WordMark.svg";
+import textLogo from "../../public/images/WY-text-logo.svg";
+import aiTextLogo from "../../public/images/WAL-text-logo.svg";
+import { useTheme } from "@/context/ThemeContext";
 
 export default function Footer() {
+  const { theme } = useTheme();
+  const logo = theme === "ai-agents" ? aiTextLogo : textLogo;
   return (
     <footer className="bg-on-surface w-full">
       <PageContainer as="div" className="pb-8 w-full">
         {/* Logo */}
         <div className="mb-12">
-          <Image src={textLogo} alt="ANVI DIGITAL" width={380} height={50} />
+          <Image src={logo} alt="ANVI DIGITAL" width={380} height={50} />
         </div>
 
         {/* Link Grid */}

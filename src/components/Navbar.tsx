@@ -3,7 +3,10 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import textLogo from "../../public/images/BY-WordMark.svg";
+import { scrollToContact } from "@/lib/scrollToContact";
+import textLogo from "../../public/images/BY-text-logo.svg";
+import aiTextLogo from "../../public/images/BAL-text-logo.svg";
+import { useTheme } from "@/context/ThemeContext";
 const serviceItems = [
   { label: "SEO", href: "/services/seo" },
   { label: "PPC", href: "/services/ppc" },
@@ -21,6 +24,7 @@ const Navbar = () => {
   // State variables
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
+  const { theme } = useTheme();
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -69,12 +73,13 @@ const Navbar = () => {
 
   // Render Methods
   const renderLogo = () => {
+    const logo = theme === "ai-agents" ? aiTextLogo : textLogo;
     return (
       <Link
         className="text-2xl font-black tracking-tighter text-on-surface shrink-0"
         href="/"
       >
-        <Image src={textLogo} alt="ANVI DIGITAL" width={250} height={35} />
+        <Image src={logo} alt="ANVI DIGITAL" width={250} height={35} />
       </Link>
     );
   };
@@ -194,9 +199,12 @@ const Navbar = () => {
           </Link>
         ))}
         <Link
-          href="/#contact"
+          href="#"
+          onClick={(e) => {
+            handleCloseAll();
+            scrollToContact(e);
+          }}
           className="bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform inline-block"
-          onClick={handleCloseAll}
         >
           Let&apos;s Talk Growth
         </Link>
@@ -215,7 +223,8 @@ const Navbar = () => {
         {renderDesktopNav()}
 
         <Link
-          href="/#contact"
+          href="#"
+          onClick={scrollToContact}
           className="hidden md:inline-block shrink-0 bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform"
         >
           Let&apos;s Talk Growth

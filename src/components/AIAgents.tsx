@@ -1,4 +1,5 @@
 import PageContainer from "./PageContainer";
+import ContactLink from "@/components/ContactLink";
 
 export default function AIAgents() {
   return (
@@ -92,12 +93,9 @@ export default function AIAgents() {
         <p className="text-2xl font-bold uppercase tracking-widest text-on-surface-variant">
           Built to deliver steady growth, not short-term spikes.
         </p>
-        <a
-          href="/#contact"
-          className="bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-secondary transition-colors inline-block"
-        >
+        <ContactLink className="bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-secondary transition-colors inline-block">
           Start Growing
-        </a>
+        </ContactLink>
       </div>
     </PageContainer>
   );

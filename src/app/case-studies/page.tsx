@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { caseStudies } from "@/data/caseStudies";
-import Contact from "@/components/Contact";
-
+import ContactLink from "@/components/ContactLink";
 export const metadata: Metadata = {
   title: "Case Studies | Anvi Digital",
   description:
@@ -106,17 +105,12 @@ export default function CaseStudiesPage() {
             <p className="text-xl text-surface/60 font-light mb-10 leading-relaxed">
               Every result above started with a single conversation.
             </p>
-            <a
-              href="#contact"
-              className="bg-surface text-on-surface px-10 py-5 font-bold uppercase tracking-[0.2em] text-sm hover:bg-secondary hover:text-on-secondary transition-colors inline-block"
-            >
+            <ContactLink className="bg-surface text-on-surface px-10 py-5 font-bold uppercase tracking-[0.2em] text-sm hover:bg-secondary hover:text-on-secondary transition-colors inline-block">
               Let&apos;s Talk Growth
-            </a>
+            </ContactLink>
           </div>
         </div>
       </section>
-
-      <Contact />
     </>
   );
 }

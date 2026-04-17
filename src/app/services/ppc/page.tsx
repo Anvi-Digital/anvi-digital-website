@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageContainer from "@/components/PageContainer";
-import Contact from "@/components/Contact";
-
+import ContactLink from "@/components/ContactLink";
 export const metadata: Metadata = {
   title: "PPC Management | Google Ads & Paid Search",
   description:
@@ -82,12 +81,9 @@ export default function PPCPage() {
             for LTV, eliminating waste, and targeting exact moments of user
             intent.
           </p>
-          <Link
-            href="#contact"
-            className="bg-on-background text-surface px-10 py-5 font-bold uppercase tracking-[0.1em] text-sm hover:bg-secondary hover:text-on-secondary transition-colors inline-block"
-          >
+          <ContactLink className="bg-on-background text-surface px-10 py-5 font-bold uppercase tracking-[0.1em] text-sm hover:bg-secondary hover:text-on-secondary transition-colors inline-block">
             GET A FREE AUDIT
-          </Link>
+          </ContactLink>
         </div>
       </PageContainer>
 
@@ -182,16 +178,11 @@ export default function PPCPage() {
             <br />
             burning budget?
           </h2>
-          <Link
-            href="#contact"
-            className="shrink-0 bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-surface hover:text-on-background transition-colors inline-block"
-          >
+          <ContactLink className="shrink-0 bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-surface hover:text-on-background transition-colors inline-block">
             Get a Free Audit
-          </Link>
+          </ContactLink>
         </div>
       </PageContainer>
-
-      <Contact />
     </>
   );
 }

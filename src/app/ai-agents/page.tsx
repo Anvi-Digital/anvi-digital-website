@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import PageContainer from "@/components/PageContainer";
+import AITheme from "@/components/AITheme";
+import ContactLink from "@/components/ContactLink";
 
 export const metadata: Metadata = {
   title: "AI Agents — Practical AI Built for Real Business Work",
@@ -88,6 +90,7 @@ const bestSuitedFor = [
 export default function AIAgentsPage() {
   return (
     <>
+      <AITheme />
       {/* ─── HERO ─── */}
       <PageContainer className="min-h-[80vh] md:min-h-screen flex flex-col justify-center items-center py-0!">
         <div className="mt-auto w-full">
@@ -451,12 +454,9 @@ export default function AIAgentsPage() {
             solutions that fit your business.
           </p>
           <div className="flex flex-col md:flex-row flex-wrap gap-4">
-            <a
-              href="/#contact"
-              className="bg-secondary text-on-secondary px-10 py-5 md:px-12 md:py-6 font-bold uppercase tracking-[0.2em] text-sm hover:-translate-y-1 transition-transform inline-block"
-            >
+            <ContactLink className="bg-secondary text-on-secondary px-10 py-5 md:px-12 md:py-6 font-bold uppercase tracking-[0.2em] text-sm hover:-translate-y-1 transition-transform inline-block">
               Book a Strategy Session
-            </a>
+            </ContactLink>
             <a
               href="#use-cases"
               className="border-2 border-surface text-surface px-10 py-5 md:px-12 md:py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-surface/10 transition-colors inline-block"
