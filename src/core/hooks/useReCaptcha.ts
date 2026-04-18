@@ -65,15 +65,12 @@ export const useReCaptcha = (
 
   // Execute reCAPTCHA
   const executeReCaptcha = useCallback(async (): Promise<string | null> => {
-    if (typeof window === "undefined" || !siteKey) {
-      // Don't fail if we're in dev and no key is provided (mock mode could return a dummy token)
-      if (process.env.NODE_ENV === "development") {
-        console.warn(
-          "ReCaptcha site key missing in dev. Returning mock token.",
-        );
-        return "mock-token-dev-mode";
-      }
+    // Always use mock token in development to avoid localhost domain restrictions
+    if (process.env.NODE_ENV === "development") {
+      return "mock-token-dev-mode";
+    }
 
+    if (typeof window === "undefined" || !siteKey) {
       setState((prev) => ({
         ...prev,
         error: "reCAPTCHA not available - missing site key",

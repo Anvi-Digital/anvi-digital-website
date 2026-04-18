@@ -2,7 +2,8 @@ import Hero from "@/components/Hero";
 import AISEO from "@/components/AISEO";
 import AIAgents from "@/components/AIAgents";
 import SocialProof from "@/components/SocialProof";
-import TrustAndFAQ from "@/components/TrustAndFAQ";
+import Testimonials from "@/components/Testimonials";
+
 export default function Home() {
   return (
     <>
@@ -10,7 +11,7 @@ export default function Home() {
       <AISEO />
       <AIAgents />
       <SocialProof />
-      <TrustAndFAQ />
+      <Testimonials />
     </>
   );
 }

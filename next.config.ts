@@ -24,12 +24,22 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: `default-src 'self'; script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'${isDev ? " ws:" : ""}; frame-ancestors 'none';`,
+            value: [
+              "default-src 'self'",
+              `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.google.com https://www.gstatic.com`,
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "font-src 'self' https://fonts.gstatic.com",
+              "img-src 'self' data: https:",
+              `connect-src 'self'${isDev ? " ws:" : ""} https://www.google.com`,
+              "frame-src https://www.google.com",
+              "frame-ancestors 'none'",
+            ].join("; "),
           },
         ],
       },
       {
-        source: "/:path*\\.(ico|svg|png|jpg|jpeg|webp|gif|woff|woff2|ttf|otf|css|js)",
+        source:
+          "/:path*\\.(ico|svg|png|jpg|jpeg|webp|gif|woff|woff2|ttf|otf|css|js)",
         headers: [
           {
             key: "Cache-Control",
