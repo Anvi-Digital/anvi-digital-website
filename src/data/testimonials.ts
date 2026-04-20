@@ -44,12 +44,30 @@ export const TESTIMONIALS = [
       "Rama consulted with Cashrewards for just under a year and has been instrumental in helping establish SEO best practices. He is very knowledgeable and keeps abreast of new and innovative ways to improve our discoverability in a crowded market.",
   },
   {
-    name: "Benjamin Smith",
-    position: "Founder",
-    compony: "Smith Strategy",
+    name: "Matt Martel",
+    position: "Executive Editor",
+    compony: "Fairfax Media",
     avtar:
-      "https://media.licdn.com/dms/image/v2/D5603AQG13089rK0x1A/profile-displayphoto-shrink_200_200/0/1716911733034?e=1778112000&v=beta&t=8393180581177204211",
+      "https://media.licdn.com/dms/image/v2/D5603AQHowX1-gVn1_g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721986277052?e=1778112000&v=beta&t=0HnA0EAaG2P0pc3E6VcKXFRg5fBKfWpuqrzVcFtAXFI",
     content:
-      "Rama is a true expert in his field. His strategic approach to SEO and content marketing has helped countless brands increase their visibility and drive meaningful results. Working with Rama is a game-changer for any business looking to elevate their digital presence.",
+      "I worked with Rama at Fairfax Media and then, once I started running the product side or BusinessDesk, contracted him to review and run the technical side of our SEO, including training editorial staff.\n Rama is a pro. I highly recommend him. Although we thought our SEO setup was OK, he found many issues that we were able to fix and eventually double Google traffic.\n Next time I need SEO support, he will be my first call.",
+  },
+  {
+    name: "Nicholas Gray",
+    position: "Managing Director",
+    compony: "News Corp Australia",
+    avtar:
+      "https://media.licdn.com/dms/image/v2/D5603AQHgTE1bhQ-nhg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710305682832?e=1778112000&v=beta&t=l43iQbR340fqCt4Rny5h8Ykgjsl1sRj3zDvkCgyDUlo",
+    content:
+      "I consider Rama to be a very fine SEO technical practitioner and a diligent and loyal team member.  During Rama's time at The Australian we grew search audience and subscriptions, and Rama demonstrated an ability to spot trends and work with product and editorial teams to deliver growth.  I'd have him on my team any time. ",
+  },
+  {
+    name: "Andrew Birmingham",
+    position: "Editor-in-Chief and Associate Publisher",
+    compony: "Which-50.com",
+    avtar:
+      "https://media.licdn.com/dms/image/v2/D5603AQE4PzCDulSn3g/profile-displayphoto-scale_200_200/B56ZuuvAinIUAc-/0/1768163118402?e=1778112000&v=beta&t=q0sJzuerrICcXVEwhNjFN4qUWRjOKzykNV4dKNzItik",
+    content:
+      "Rama was core to the rebuild of Which-50 in 2015. That the moment when Which-50 went from being my personal blog to transforming into a company. Due to the excellent work he did, Which-50's ranking was comparable to and in fact, exceeded some of the best-known media brands in the world. And since then, Rama also provided us with insights and advice that were very helpful. I strongly recommend him.",
   },
 ];

@@ -91,7 +91,7 @@ export default function Testimonials() {
               <span className="text-6xl font-black text-secondary/30 leading-none block -mb-2">
                 &ldquo;
               </span>
-              <p className="text-xl md:text-xl font-light leading-relaxed text-surface/80">
+              <p className="text-xl md:text-xl font-light leading-relaxed text-surface/80 whitespace-pre-line">
                 {t.content}
               </p>
             </div>

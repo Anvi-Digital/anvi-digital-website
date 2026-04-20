@@ -8,15 +8,21 @@ import PageContainer from "./PageContainer";
 const clients = [
   { name: "A2 Milk", src: "/clients/a2_Milk_Logo.svg" },
   { name: "ACM", src: "/clients/acm-logo.svg" },
-  { name: "Domain", src: "/clients/domain-logo.svg" },
+  { name: "Employsure", src: "/clients/employsure_logo.avif" },
   { name: "Hello Molly", src: "/clients/hellmollyLogo.svg" },
+  { name: "Intrax", src: "/clients/intrax-logo.svg" },
+  { name: "Domain", src: "/clients/domain-logo.svg" },
   {
     name: "Life Insurance Direct",
     src: "/clients/Life_Insurance_Direct_Logo.svg",
   },
+  { name: "Dmerge", src: "/clients/dmerge-logo.svg" },
+  { name: "LiveWire", src: "/clients/liveWire-logo.svg" },
   { name: "Rubberdesk", src: "/clients/rubberdesk-logo.svg" },
+  // { name: "UVTing", src: "/clients/uvtinglogo.webp" },
   { name: "View", src: "/clients/viewLogo.svg" },
   { name: "Willson", src: "/clients/willson.svg" },
+  { name: "Zip", src: "/clients/zip-logo.svg" },
 ];
 
 // Three rows with different starting offsets so they don't look identical
