@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TESTIMONIALS } from "@/data/testimonials";
 import PageContainer from "./PageContainer";
+import { div } from "framer-motion/client";
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0);
@@ -58,7 +59,7 @@ export default function Testimonials() {
 
   return (
     <div ref={sectionRef as React.RefObject<HTMLDivElement>}>
-      <PageContainer className="bg-on-background text-surface overflow-hidden">
+      <PageContainer className="bg-surface-container text-on-surface overflow-hidden">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
             What They
@@ -71,18 +72,18 @@ export default function Testimonials() {
             <button
               onClick={prev}
               aria-label="Previous testimonial"
-              className="w-14 h-14 border border-surface/20 flex items-center justify-center text-surface/50 hover:border-secondary hover:text-secondary transition-all duration-300"
+              className="w-14 h-14 border border-on-surface/20 flex items-center justify-center text-on-surface/50 hover:border-secondary hover:text-secondary transition-all duration-300"
             >
               <span className="material-symbols-outlined">arrow_back</span>
             </button>
-            <span className="text-surface/20 text-sm font-bold tabular-nums">
+            <span className="text-on-surface text-sm font-bold tabular-nums">
               {String(current + 1).padStart(2, "0")} /{" "}
               {String(total).padStart(2, "0")}
             </span>
             <button
               onClick={next}
               aria-label="Next testimonial"
-              className="w-14 h-14 border border-surface/20 flex items-center justify-center text-surface/50 hover:border-secondary hover:text-secondary transition-all duration-300"
+              className="w-14 h-14 border border-on-surface/20 flex items-center justify-center text-on-surface/50 hover:border-secondary hover:text-secondary transition-all duration-300"
             >
               <span className="material-symbols-outlined">arrow_forward</span>
             </button>
@@ -104,10 +105,10 @@ export default function Testimonials() {
             >
               {/* Quote */}
               <div className="max-w-4xl">
-                <span className="text-6xl font-black text-secondary/30 leading-none block -mb-2">
+                <span className="text-6xl font-black text-secondary/50 leading-none block -mb-2">
                   &ldquo;
                 </span>
-                <p className="text-xl md:text-xl font-light leading-relaxed text-surface/80 whitespace-pre-line">
+                <p className="text-xl md:text-xl font-light leading-relaxed text-on-surface/80 whitespace-pre-line">
                   {t.content}
                 </p>
               </div>
@@ -131,10 +132,12 @@ export default function Testimonials() {
                     </div>
                   )}
                   <div className="text-right">
-                    <p className="font-bold text-surface text-sm uppercase tracking-widest">
+                    <p className="font-bold text-on-surface text-sm uppercase tracking-widest">
                       {t.name}
                     </p>
-                    <p className="text-xs text-surface/40 mt-1">{t.position}</p>
+                    <p className="text-xs text-on-surface/40 mt-1">
+                      {t.position}
+                    </p>
                     <p className="text-xs text-secondary/70 font-bold uppercase tracking-widest mt-0.5">
                       {t.compony}
                     </p>
@@ -148,12 +151,16 @@ export default function Testimonials() {
         {/* Progress dots */}
         <div className="flex gap-2">
           {TESTIMONIALS.map((_, i) => (
-            <button
+            <div
               key={i}
               onClick={() => go(i, i > current ? 1 : -1)}
-              aria-label={`Go to testimonial ${i + 1}`}
-              className={`h-0.5 transition-all duration-500 ${i === current ? "w-12 bg-secondary" : "w-4 bg-surface/20 hover:bg-surface/40"}`}
-            />
+              className="cursor-pointer "
+            >
+              <button
+                aria-label={`Go to testimonial ${i + 1}`}
+                className={`h-0.5 my-2 transition-all cursor-pointer duration-500 ${i === current ? "w-12 bg-secondary" : "w-4 bg-on-surface/20 hover:bg-on-surface/40"}`}
+              />
+            </div>
           ))}
         </div>
       </PageContainer>

@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <SocialProof />
       <AISEO />
       <AIAgents />
-      <SocialProof />
       <Testimonials />
     </>
   );

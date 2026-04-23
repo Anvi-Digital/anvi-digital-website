@@ -3,14 +3,12 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { motion, useAnimationFrame, useMotionValue } from "framer-motion";
-import PageContainer from "./PageContainer";
 
 const clients = [
   { name: "A2 Milk", src: "/clients/a2_Milk_Logo.svg" },
   { name: "ACM", src: "/clients/acm-logo.svg" },
   { name: "Employsure", src: "/clients/employsure_logo.avif" },
   { name: "Hello Molly", src: "/clients/hellmollyLogo.svg" },
-  { name: "Intrax", src: "/clients/intrax-logo.svg" },
   { name: "Domain", src: "/clients/domain-logo.svg" },
   {
     name: "Life Insurance Direct",
@@ -23,22 +21,11 @@ const clients = [
   { name: "View", src: "/clients/viewLogo.svg" },
   { name: "Willson", src: "/clients/willson.svg" },
   { name: "Zip", src: "/clients/zip-logo.svg" },
+  { name: "Intrax", src: "/clients/intrax-logo.svg" },
 ];
 
-// Three rows with different starting offsets so they don't look identical
+// Single row for a cleaner look
 const row1 = [...clients, ...clients];
-const row2 = [
-  ...clients.slice(3),
-  ...clients.slice(0, 3),
-  ...clients.slice(3),
-  ...clients.slice(0, 3),
-];
-const row3 = [
-  ...clients.slice(5),
-  ...clients.slice(0, 5),
-  ...clients.slice(5),
-  ...clients.slice(0, 5),
-];
 
 const TRACK_H = 32;
 const SPEED = 0.04;
@@ -77,8 +64,8 @@ function MarqueeRow({
       onMouseEnter={() => (paused.current = true)}
       onMouseLeave={() => (paused.current = false)}
     >
-      <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-linear-to-r from-surface-container-low to-transparent pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-linear-to-l from-surface-container-low to-transparent pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-32 z-10 bg-linear-to-r from-surface to-transparent pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-32 z-10 bg-linear-to-l from-surface to-transparent pointer-events-none" />
       <motion.div
         ref={trackRef}
         style={{ x }}
@@ -88,7 +75,7 @@ function MarqueeRow({
           <motion.div
             key={`${client.name}-${i}`}
             className="shrink-0 h-full"
-            initial={{ opacity: 0.3, filter: "grayscale(100%)" }}
+            initial={{ opacity: 0.6, filter: "grayscale(70%)" }}
             whileHover={{ opacity: 1, filter: "grayscale(0%)" }}
             transition={{ duration: 0.25 }}
           >
@@ -97,7 +84,7 @@ function MarqueeRow({
               alt={client.name}
               width={200}
               height={TRACK_H}
-              className="h-full w-auto object-contain"
+              className="h-full w-auto object-contain text-black"
             />
           </motion.div>
         ))}
@@ -108,48 +95,33 @@ function MarqueeRow({
 
 export default function SocialProof() {
   return (
-    <PageContainer className="bg-surface-container-low overflow-hidden">
-      <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-center">
-        {/* Left — text */}
+    <section className="py-16 md:py-24 overflow-hidden">
+      <div className="max-w-screen-2xl mx-auto px-8">
+        {/* Heading — Centered at Top */}
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="md:w-2/5 shrink-0"
+          className="text-center"
         >
-          <span className="font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-6 block">
-            Our Clients
-          </span>
-          <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">
-            Trusted by
-            <br />
-            <span className="text-secondary">70+</span>
-            <br />
-            Businesses.
+          <h2 className="text-sm md:text-base font-bold uppercase tracking-[0.2em]">
+            Trusted by Enterprises
           </h2>
-          <p className="text-on-surface-variant font-light leading-relaxed">
-            From growing teams to established brands, we focus on what actually
-            drives results.
-          </p>
         </motion.div>
 
-        {/* Right — 3 marquee rows */}
+        {/* Logos — Single Line with Borders */}
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="flex-1 flex flex-col gap-12 min-w-0"
+          transition={{ duration: 0.8 }}
+          className="relative py-10 border-y border-white/5"
         >
-          {/* Row 1 — left */}
+          <div className="absolute inset-0 pointer-events-none z-10" />
           <MarqueeRow items={row1} reverse={false} />
-          {/* Row 2 — right (opposite) */}
-          <MarqueeRow items={row2} reverse={true} />
-          {/* Row 3 — left (same as row 1) */}
-          <MarqueeRow items={row3} reverse={false} />
         </motion.div>
       </div>
-    </PageContainer>
+    </section>
   );
 }
