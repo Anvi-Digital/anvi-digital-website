@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { caseStudies } from "@/data/caseStudies";
 import ContactLink from "@/components/ContactLink";
 export const metadata: Metadata = {
@@ -42,15 +41,14 @@ export default function CaseStudiesPage() {
       {/* ─── CASE STUDY LIST ─── */}
       <section className="bg-surface">
         {caseStudies.map((study, i) => (
-          <Link
-            key={study.slug}
-            href={`/case-studies/${study.slug}`}
-            className={`group block border-b border-on-surface/10 transition-colors duration-300 hover:bg-surface-container-low`}
+          <div
+            key={study.id}
+            className="group block border-b border-on-surface/10 transition-colors duration-300 hover:bg-surface-container-low"
           >
             <div className="max-w-screen-2xl mx-auto px-8 py-16 md:py-20">
               <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-16">
-                {/* Number */}
-                <span className="text-7xl md:text-9xl font-black tracking-tighter text-on-surface/5 group-hover:text-secondary transition-colors duration-300 shrink-0 leading-none">
+                {/* Number (ID) */}
+                <span className="text-7xl md:text-9xl font-black tracking-tighter text-on-surface/5 transition-colors duration-300 shrink-0 leading-none">
                   {study.id}
                 </span>
 
@@ -60,14 +58,18 @@ export default function CaseStudiesPage() {
                     {study.category}
                   </span>
                   <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight leading-tight mb-3">
-                    {study.headline}{" "}
-                    <span className="text-on-surface-variant font-light text-2xl md:text-3xl">
-                      {study.unit}
-                    </span>
+                    {study.number}
                   </h2>
                   <p className="text-base md:text-lg text-on-surface-variant/70 font-light max-w-2xl">
-                    {study.summary}
+                    {study.context}
                   </p>
+                  
+                  {study.clients && (
+                    <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant/40 mt-4">
+                      Client: <span className="text-on-surface-variant/80">{study.clients}</span>
+                    </p>
+                  )}
+
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mt-5">
                     {study.tags.map((tag) => (
@@ -80,14 +82,9 @@ export default function CaseStudiesPage() {
                     ))}
                   </div>
                 </div>
-
-                {/* Arrow */}
-                <span className="material-symbols-outlined text-4xl text-on-surface/10 group-hover:text-secondary group-hover:translate-x-2 transition-all duration-300 shrink-0 hidden md:block">
-                  arrow_forward
-                </span>
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </section>
 
