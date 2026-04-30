@@ -1,5 +1,13 @@
+"use client";
+
 import PageContainer from "./PageContainer";
 import ContactLink from "@/components/ContactLink";
+
+function scrollToSection(id: string) {
+  document
+    .getElementById(id)
+    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 export default function Hero() {
   return (
@@ -29,12 +37,12 @@ export default function Hero() {
               <ContactLink className="bg-on-background text-surface px-6 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:bg-secondary text-center inline-block">
                 Start Growing
               </ContactLink>
-              <a
-                href="#ai-seo"
+              <button
+                onClick={() => scrollToSection("ai-seo")}
                 className="border-2 border-on-background text-on-background px-6 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:bg-surface-container text-center inline-block"
               >
                 See How It Works
-              </a>
+              </button>
             </div>
           </div>
         </div>

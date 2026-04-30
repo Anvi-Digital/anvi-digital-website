@@ -38,18 +38,6 @@ export default function Footer() {
             >
               About
             </a>
-            {/* <a
-              className="text-[#faf9f7]/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
-              href="#"
-            >
-              Insights
-            </a>
-            <a
-              className="text-[#faf9f7]/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
-              href="#"
-            >
-              Contact
-            </a> */}
           </div>
 
           <div className="lg:col-span-2">

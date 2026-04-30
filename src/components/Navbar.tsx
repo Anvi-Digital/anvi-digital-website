@@ -192,16 +192,15 @@ const Navbar = () => {
             {item.label}
           </Link>
         ))}
-        <Link
-          href="#"
+        <button
           onClick={(e) => {
             handleCloseAll();
-            scrollToContact(e);
+            scrollToContact(e as unknown as React.MouseEvent);
           }}
           className="bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform inline-block"
         >
           Let&apos;s Talk Growth
-        </Link>
+        </button>
       </div>
     );
   };
@@ -216,13 +215,12 @@ const Navbar = () => {
         {renderLogo()}
         {renderDesktopNav()}
 
-        <Link
-          href="#"
+        <button
           onClick={scrollToContact}
           className="hidden md:inline-block shrink-0 bg-secondary text-on-secondary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:scale-95 active:scale-90 transition-transform"
         >
           Let&apos;s Talk Growth
-        </Link>
+        </button>
 
         {renderMobileMenuButton()}
       </div>
