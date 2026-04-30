@@ -114,7 +114,7 @@ const Navbar = () => {
             aria-expanded={servicesOpen}
             aria-haspopup="true"
           >
-            Services
+            What We Do
             <span
               className={`material-symbols-outlined text-base transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
             >
@@ -160,7 +160,7 @@ const Navbar = () => {
             className="flex items-center gap-1 font-bold uppercase tracking-[0.2em] text-sm text-primary hover:text-secondary transition-all duration-300 w-full text-left"
             onClick={handleServicesToggle}
           >
-            Services
+            What We Do
             <span
               className={`material-symbols-outlined text-base transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
             >
