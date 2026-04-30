@@ -3,12 +3,9 @@
 import Image from "next/image";
 import PageContainer from "./PageContainer";
 import textLogo from "../../public/images/WY-text-logo.svg";
-import aiTextLogo from "../../public/images/WAL-text-logo.svg";
-import { useTheme } from "@/context/ThemeContext";
 
 export default function Footer() {
-  const { theme } = useTheme();
-  const logo = theme === "ai-agents" ? aiTextLogo : textLogo;
+  const logo = textLogo;
   return (
     <footer className="bg-on-surface w-full">
       <PageContainer as="div" className="pb-8 w-full">
@@ -28,12 +25,6 @@ export default function Footer() {
               href="/services/seo"
             >
               AI SEO
-            </a>
-            <a
-              className="text-surface/40 hover:text-secondary hover:italic transition-all duration-500 font-bold uppercase text-2xl"
-              href="/ai-agents"
-            >
-              AI Agents
             </a>
           </div>
 

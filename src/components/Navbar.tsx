@@ -5,17 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { scrollToContact } from "@/lib/scrollToContact";
 import textLogo from "../../public/images/BY-text-logo.svg";
-import aiTextLogo from "../../public/images/BAL-text-logo.svg";
-import { useTheme } from "@/context/ThemeContext";
 const serviceItems = [
   { label: "SEO", href: "/services/seo" },
-  { label: "PPC", href: "/services/ppc" },
   { label: "Paid Media", href: "/services/paid-media" },
-  { label: "Social Media", href: "/services/social-media" },
 ];
 
 const mainNavItems = [
-  { label: "AI Agents", href: "/ai-agents" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "About", href: "/about" },
 ];
@@ -24,7 +19,6 @@ const Navbar = () => {
   // State variables
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [servicesOpen, setServicesOpen] = useState<boolean>(false);
-  const { theme } = useTheme();
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -73,7 +67,7 @@ const Navbar = () => {
 
   // Render Methods
   const renderLogo = () => {
-    const logo = theme === "ai-agents" ? aiTextLogo : textLogo;
+    const logo = textLogo;
     return (
       <Link
         className="text-2xl font-black tracking-tighter text-on-surface shrink-0"

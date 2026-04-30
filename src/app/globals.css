@@ -149,56 +149,8 @@ body {
   outline: 3px solid var(--color-on-surface);
 }
 
-/* ─── AI Agents Page Theme ─── */
-[data-theme="ai-agents"] {
-  --color-surface: #F5FFFD;
-  --color-background: #F5FFFD;
-  --color-surface-bright: #F5FFFD;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #e8f7f4;
-  --color-surface-container: #daf0ec;
-  --color-surface-container-high: #cce9e4;
-  --color-surface-container-highest: #bde2dc;
-  --color-surface-dim: #c2dbd7;
-  --color-surface-variant: #cce9e4;
-
-  --color-on-surface: #224242;
-  --color-on-surface-variant: #377D71;
-  --color-on-background: #224242;
-
-  --color-primary: #377D71;
-  --color-on-primary: #F5FFFD;
-  --color-primary-container: #33AB96;
-  --color-on-primary-container: #224242;
-
-  --color-secondary: #33AB96;
-  --color-on-secondary: #F5FFFD;
-  --color-secondary-container: #FFFDF1;
-  --color-on-secondary-container: #224242;
-
-  --color-inverse-surface: #224242;
-  --color-inverse-on-surface: #F5FFFD;
-
-  --color-outline: #377D71;
-  --color-outline-variant: #a8d4cc;
-}
-
-[data-theme="ai-agents"] body {
-  background-color: var(--color-surface);
-  color: var(--color-on-surface);
-}
-
-/* Navbar in AI theme */
-[data-theme="ai-agents"] nav {
-  background-color: color-mix(in srgb, var(--color-surface) 80%, transparent) !important;
-}
-
-/* Footer in AI theme */
-[data-theme="ai-agents"] footer {
-  background-color: #224242 !important;
-}
-
-/* text-outline utility in AI theme */
-[data-theme="ai-agents"] .text-outline {
-  -webkit-text-stroke: 1px #224242;
+/* text-outline utility in default theme */
+.text-outline {
+  -webkit-text-stroke: 1px #1a1c1b;
+  color: transparent;
 }

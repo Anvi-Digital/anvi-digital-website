@@ -22,31 +22,27 @@ export default function SEOServicesPage() {
       <PageContainer className="flex flex-col pt-8">
         <div className="mt-auto w-full">
           <h1 className="text-giant font-black uppercase mb-12">
-            Own Your
+            OWN YOUR
             <br />
-            <span className="text-secondary">Organic</span>
+            <span className="text-secondary">SEARCH</span>
             <br />
-            <span className="text-primary-container">Growth.</span>
+            <span className="text-primary-container">PRESENCE.</span>
           </h1>
           <div className="stagger-grid">
             <div className="col-start-1 col-span-12 md:col-start-7 md:col-span-6 border-l-4 border-on-surface pl-8 py-4">
               <p className="text-base md:text-2xl font-light leading-snug mb-4 text-on-surface-variant">
-                SEO that compounds over time, not campaigns that fade.
+                Search is no longer one channel. It is Google, ChatGPT,
+                Perplexity, AI Overviews, Copilot and whatever comes next. We
+                build the systems that make your business the answer across all
+                of them.
               </p>
               <p className="text-base md:text-lg font-light leading-relaxed mb-8 text-on-surface-variant/70">
-                Build a predictable pipeline of high-intent traffic through
-                search, powered by strategy, content, and meticulous technical
-                execution.
+                Most SEO work optimises for where search was. We build for where
+                it is going.
               </p>
               <div className="flex flex-col md:flex-row flex-wrap gap-4 mt-8 md:mt-12">
-                <a
-                  href="/#how-it-works"
-                  className="bg-on-background text-surface px-6 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:bg-secondary text-center inline-block"
-                >
-                  Start Growing
-                </a>
                 <ContactLink className="border-2 border-on-background text-on-background px-6 py-4 md:px-10 md:py-5 text-sm md:text-base font-bold uppercase tracking-widest transition-all hover:bg-surface-container text-center inline-block">
-                  Get a Free Audit
+                  Let's Talk Growth
                 </ContactLink>
               </div>
             </div>
@@ -70,34 +66,36 @@ export default function SEOServicesPage() {
               The Reality
             </span>
             <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-8">
-              SEO,
+              SEO
               <br />
-              Done
+              Has
               <br />
-              Properly.
+              Changed
             </h2>
           </div>
-          <div className="md:max-w-lg md:pt-16">
+          <div className="md:max-w-[868px] md:pt-12">
             <p className="text-xl md:text-2xl font-light leading-relaxed text-on-surface-variant mb-8">
-              Search Engine Optimisation is not just about rankings. It&apos;s
-              about showing up when your customers are actively looking, and
-              turning that intent into enquiries.
+              Google's algorithm now incorporates AI generated answers. ChatGPT
+              and Perplexity are routing millions of searches away from
+              traditional results. Zero click rates are rising. The businesses
+              winning search in 2026 are not the ones with the most backlinks.
+              They are the ones built as the most trusted, most cited source in
+              their category.
             </p>
             <p className="text-xl font-light leading-relaxed text-on-surface-variant mb-8">
-              Most businesses don&apos;t fail at SEO because of a lack of
-              effort. They fail because there&apos;s{" "}
+              Most businesses do not fail at SEO because of a lack of effort.
+              They fail because there is{" "}
               <strong className="font-bold text-on-surface">
-                no system behind it.
+                no system built for how search actually works today
               </strong>{" "}
-              That&apos;s exactly what we build.
             </p>
             <div className="w-12 h-2 bg-secondary mb-8" />
             <ul className="grid sm:grid-cols-2 gap-4">
               {[
-                "Consistent acquisition",
-                "Compounding traffic",
-                "Reduced paid reliance",
-                "Long-term asset",
+                "Visibility across Google and AI surfaces",
+                "Entity authority that LLMs recognise and cite",
+                "Compounding traffic, not monthly campaigns",
+                "Reduced paid dependency over time",
               ].map((item) => (
                 <li
                   key={item}
@@ -119,63 +117,69 @@ export default function SEOServicesPage() {
             The Solutions
           </span>
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-8">
-            Designed
+            BUILT FOR
             <br />
-            For
-            <br />
-            <span className="italic text-secondary">Dominance.</span>
+            <span className="italic text-secondary">HOW SEARCH WORKS NOW.</span>
           </h2>
           <div className="w-24 h-2 bg-on-surface mb-8" />
           <p className="text-2xl max-w-xl text-on-surface-variant font-light">
-            We provide end-to-end search solutions tailored to your market,
-            scale, and specific business goals.
+            Four practice areas. One system. Engineered for the search landscape
+            your customers already live in.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {[
             {
               title: "Enterprise SEO",
-              desc: "Built for scale, complexity, and large platforms. We engineer technical SEO architectures that support thousands of pages seamlessly without breaking.",
+              desc: "Large platforms break in ways small sites never do. Crawl budget, duplicate signals, JavaScript rendering, international hreflang, site migrations at scale. Built from real experience growing platforms from 200K to 6.1M monthly sessions, not agency theory.",
               border: "border-secondary",
               hover: "hover:bg-on-background hover:text-surface",
               icon: SquareBoxShape,
               href: "/services/seo/enterprise",
               tags: [
-                "Technical SEO at scale",
-                "Site architecture",
-                "Automation",
+                "TECHNICAL SEO AT SCALE",
+                "SITE ARCHITECTURE",
+                "JS RENDERING",
               ],
             },
             {
-              title: "AEO / GEO",
-              desc: "Optimise for Answer & Generative Engines (AI Overview, Copilot). A crucial emerging channel for maintaining visibility.",
+              title: "AI Search & GEO",
+              desc: "ChatGPT, Perplexity, Google AI Overviews and Copilot are answering your buyers' questions before they reach your website. We build the entity signals, structured data and topical authority that make your brand the cited source, not the missed result.",
               border: "border-primary-container",
               hover: "hover:bg-secondary hover:text-on-secondary",
               icon: StarCurvedShape,
               href: "/services/seo/aeo-geo",
-              tags: ["Answer Engines", "Generative Content", "Structured Data"],
+              tags: [
+                "ENTITY ENGINEERING",
+                "STRUCTURED DATA",
+                "GENERATIVE CONTENT",
+              ],
             },
             {
               title: "Local SEO",
-              desc: "Capture high-intent searches in your area & drive local enquiries through map visibility, and highly-targeted landing pages.",
+              desc: "High-intent local searches convert at a rate most paid campaigns never reach. We build Google Business Profile authority, local entity signals and suburb-level landing pages that capture demand at the moment it forms.",
               border: "border-on-surface",
               hover:
                 "hover:bg-primary-container hover:text-on-primary-container",
               icon: RoundShape,
               href: "/services/seo/local",
-              tags: ["Business Profile", "Map Visibility", "Local Landings"],
+              tags: [
+                "BUSINESS PROFILE",
+                "LOCAL ENTITY SIGNALS",
+                "LOCAL LANDINGS",
+              ],
             },
             {
               title: "Ecommerce SEO",
-              desc: "Dominating search for online stores. We focus on conversion-driven architectures, product page optimization, and scalable collection growth.",
+              desc: "Product pages, collection architecture, variant handling, international hreflang and merchant feed alignment. Built from hands-on work across fashion, FMCG and marketplace ecommerce, not generic audits.",
               border: "border-secondary",
               hover: "hover:bg-on-background hover:text-surface",
               icon: HalfRoundShape,
               href: "/services/seo/ecommerce",
               tags: [
-                "Product Optimization",
-                "Collection Scaling",
-                "Revenue Growth",
+                "PRODUCT OPTIMISATION",
+                "COLLECTION SCALING",
+                "MERCHANT FEED",
               ],
             },
           ].map((card) => (
@@ -230,8 +234,8 @@ export default function SEOServicesPage() {
               Guesswork.
             </h2>
             <p className="text-2xl max-w-xl text-on-surface-variant font-light">
-              Built for steady, exponential growth. A methodology refined across
-              countless audits and deployments.
+              Refined across 16 years and dozens of enterprise deployments. Not
+              a template. A practice.
             </p>
           </div>
           <div className="hidden lg:block text-9xl font-black text-on-surface/5 select-none -mb-4">
@@ -243,22 +247,22 @@ export default function SEOServicesPage() {
             {
               num: "01",
               title: "Discover",
-              desc: "Deep-dive into your market, spy on competition, and measure performance to extract pure opportunity.",
+              desc: "Audit current search visibility across Google and AI surfaces. Map entity coverage gaps, technical debt and the highest-leverage growth fronts your competitors have missed.",
             },
             {
               num: "02",
               title: "Build",
-              desc: "Deploy the foundations. From deep technical triage to scalable programmatic content structures.",
+              desc: "Deploy technical foundations, content architecture and entity signals. Structure the site so search engines and AI models both recognise what you are and who you serve.",
             },
             {
               num: "03",
               title: "Improve",
-              desc: "Refine continuous performance models based on structured data and real user interactions.",
+              desc: "Track performance across rankings, AI citations, zero-click impressions and conversion. Optimise weekly on real signal, not monthly on vanity metrics.",
             },
             {
               num: "04",
               title: "Scale",
-              desc: "Identify traction points and apply severe scaling to grow conversions seamlessly.",
+              desc: "Expand what works across new markets, page types and AI surfaces. Introduce automation and AI agents where they compound the system rather than replace thinking.",
             },
           ].map((step) => (
             <div key={step.num} className="flex flex-col group py-4 pr-4">
@@ -296,22 +300,22 @@ export default function SEOServicesPage() {
               {
                 category: "Marketplace Growth",
                 stat: "2.1M → 6.1M",
-                desc: "Scaled organic traffic sessions within two years.",
+                desc: "Tripled organic sessions for Australia's #2 property marketplace in two years, closing the competitive gap with the category leader from 6x to 3x.",
               },
               {
-                category: "Media & Publishing",
-                stat: "+67%",
-                desc: "Exploded distinct audience reaching the #1 position.",
+                category: "Subscription Media",
+                stat: "+67% TO 3.1M",
+                desc: "Grew a national news brand to Australia's #1 paywalled destination, making search a structural driver of subscription revenue.",
               },
               {
-                category: "Product-Led Growth",
-                stat: "25% Lift",
-                desc: "Compound growth via deep technical refactoring.",
+                category: "Product Led Growth",
+                stat: "+151%",
+                desc: "Scaled a property platform from 200K to 500K monthly users under direct competition through programmatic content and AI search strategy.",
               },
               {
                 category: "AI Search",
-                stat: "New Channel",
-                desc: "Unlocked organic pipeline via generative search.",
+                stat: "CITED. NOT JUST RANKED.",
+                desc: "Built entity and structured data programs that surface brands in ChatGPT, Perplexity and Google AI Overviews. The next decade of search, already in production.",
               },
             ].map((study) => (
               <div
@@ -324,75 +328,12 @@ export default function SEOServicesPage() {
                 <span className="text-5xl md:text-6xl font-black tracking-tighter text-on-surface mb-2">
                   {study.stat}
                 </span>
-                <span className="text-sm md:text-base text-on-surface-variant md:max-w-[200px]">
+                <span className="text-sm md:text-base text-on-surface-variant">
                   {study.desc}
                 </span>
               </div>
             ))}
           </div>
-        </div>
-      </PageContainer>
-
-      {/* ─── FLYWHEEL ─── */}
-      <PageContainer className="bg-surface-container-low relative overflow-hidden">
-        <div className="flex flex-col items-center text-center">
-          <span className="font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-6 block">
-            The Engine
-          </span>
-          <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-8">
-            The Flywheel
-            <br />
-            <span className="text-secondary italic">Effect.</span>
-          </h2>
-          <p className="text-xl md:text-2xl text-on-surface-variant max-w-3xl font-light leading-relaxed mb-16">
-            Most providers focus on isolated tricks. We engineer a compounding
-            engine that operates continuously, aggregating unshakeable power
-            over time.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left w-full max-w-4xl mt-8">
-            {[
-              "Continuously captures emerging high-intent demand.",
-              "Adapts resiliently to catastrophic algorithm changes.",
-              "Dramatically improves acquisition efficiency over time.",
-              "Compounds aggregate results infinitely.",
-            ].map((item) => (
-              <div
-                key={item}
-                className="bg-surface p-8 border-t-4 border-on-surface shadow-sm"
-              >
-                <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center mb-6">
-                  <div className="w-2 h-2 rounded-full bg-secondary" />
-                </div>
-                <p className="text-lg font-medium leading-snug text-on-surface">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </PageContainer>
-
-      {/* ─── CTA ─── */}
-      <PageContainer
-        id="contact-cta"
-        className="bg-on-background text-surface text-center relative overflow-hidden"
-      >
-        <div className="flex flex-col items-center">
-          <span className="font-label uppercase tracking-[0.3em] text-xs text-primary-container font-bold mb-6 block">
-            Dominate Your Vertical
-          </span>
-          <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-10 max-w-4xl">
-            Ready to
-            <br />
-            Grow?
-          </h2>
-          <p className="text-xl md:text-2xl text-surface-variant max-w-2xl font-light leading-relaxed mb-12">
-            Stop relying on increasingly expensive paid ads. Let&apos;s engineer
-            an organic growth system tailored to scale you.
-          </p>
-          <ContactLink className="bg-secondary text-on-secondary px-8 py-5 md:px-12 md:py-6 text-base md:text-lg font-bold uppercase tracking-widest transition-all hover:bg-surface hover:text-on-surface inline-block">
-            Get a Free SEO Audit
-          </ContactLink>
         </div>
       </PageContainer>
     </>

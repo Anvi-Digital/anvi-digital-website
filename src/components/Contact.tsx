@@ -112,9 +112,9 @@ export default function Contact() {
         {/* Left Column — Headline & Info */}
         <div>
           <h2 className="text-5xl md:text-7xl font-black uppercase leading-none mb-8">
-            Ready to Grow
+            READY TO BUILD GROWTH THAT
             <br />
-            Consistently?
+            COMPOUNDS?
           </h2>
           <p className="text-2xl text-surface/60 mb-12">
             Let&apos;s build a system that brings in leads without relying on

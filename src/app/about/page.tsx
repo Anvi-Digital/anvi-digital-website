@@ -21,20 +21,21 @@ export default function AboutPage() {
           <h1 className="text-giant font-black uppercase mb-12">
             Built for
             <br />
-            <span className="text-secondary">Consistent</span>
+            <span className="text-secondary">Compounding</span>
             <br />
             <span className="text-primary-container">Growth.</span>
           </h1>
           <div className="stagger-grid">
             <div className="col-start-1 col-span-12 md:col-start-7 md:col-span-6 border-l-4 border-on-surface pl-8 py-4">
               <p className="text-base md:text-2xl font-light leading-snug mb-4 text-on-surface-variant">
-                Anvi Digital is a growth agency focused on building reliable,
-                scalable demand systems.
+                Anvi Digital is a growth practice for businesses that need
+                search to keep working in the AI era.
               </p>
               <p className="text-base md:text-lg font-light leading-relaxed text-on-surface-variant/70">
-                We combine SEO, paid media, and intelligent automation to help
-                businesses generate consistent, high-quality enquiries without
-                guesswork.
+                SEO, paid media and AI search engineered as one system. Built by
+                an operator who has scaled organic from 2.1M to 6.1M sessions,
+                lifted national audiences by 67%, and shipped four production AI
+                agents. No guesswork. No vanity.
               </p>
             </div>
           </div>
@@ -66,17 +67,19 @@ export default function AboutPage() {
           </div>
           <div className="md:max-w-lg md:pt-16">
             <p className="text-xl md:text-2xl font-light leading-relaxed text-on-surface-variant mb-8">
-              Most marketing efforts operate in silos.
+              Most agencies treat SEO, paid media and AI search as separate
+              budgets with separate dashboards.
             </p>
             <p className="text-xl font-light leading-relaxed text-on-surface-variant mb-8">
-              We bring them together by designing SEO and paid media as a single
-              system. This allows performance to improve over time while
-              reducing cost per lead.
+              We design them as one system. Demand captured in Google flows into
+              the same CRO surface as demand captured in ChatGPT, Perplexity and
+              Google AI Overviews. Paid amplifies what's organically working. AI
+              search compounds the topical authority that paid funds.
             </p>
             <div className="w-12 h-2 bg-secondary mb-8" />
             <p className="text-xl font-medium text-on-surface">
-              Our focus is on building long-term, compounding growth rather than
-              short-term spikes.
+              The result is lower cost per lead over time, not just lower cost
+              per click today.
             </p>
           </div>
         </div>
@@ -100,18 +103,19 @@ export default function AboutPage() {
         <div className="stagger-grid">
           <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-10 lg:col-start-3 lg:col-span-8">
             <p className="text-xl md:text-2xl font-light text-on-surface-variant mb-12 leading-relaxed">
-              Anvi Digital is built on experience across Australia's leading
-              media and technology companies, along with consulting engagements
-              across 70+ businesses in real estate, finance, media, SaaS, and
-              more.
+              Anvi Digital is built on operator experience inside Australia's
+              largest media and technology businesses, including Domain, News
+              Corp, View Media Group and Livewire Markets. Alongside that, 70+
+              direct consulting engagements across real estate, finance,
+              ecommerce, SaaS, fashion and clean energy.
             </p>
             <div className="border-l-4 border-on-surface pl-8 py-4 mb-16">
               <p className="text-lg md:text-xl font-light text-on-surface leading-relaxed">
-                At the centre of it is{" "}
-                <strong className="font-bold">Rama</strong>, bringing over 16
-                years of hands-on experience across SEO, growth, and product.
-                This ensures every strategy is practical, measurable, and tied
-                to real execution.
+                At the centre is <strong className="font-bold">Rama</strong>,
+                with 16 years of hands-on experience across SEO, growth and
+                product. Every strategy is built by someone who has shipped it
+                before, owned the P&L impact, and trained the teams that
+                delivered it. Practical, measurable, and tied to real execution.
               </p>
             </div>
             <div className="mt-16 flex flex-col md:flex-row gap-8">
@@ -139,8 +143,8 @@ export default function AboutPage() {
               of Growth.
             </h2>
             <p className="text-2xl max-w-xl text-on-surface-variant font-light">
-              When the right foundations are in place, results are easier to
-              scale.
+              Search, attention and revenue all behave differently in the AI
+              era. Get these three right and growth compounds.
             </p>
           </div>
           <div className="hidden lg:block text-9xl font-black text-on-surface/5 select-none -mb-4">
@@ -152,21 +156,21 @@ export default function AboutPage() {
             {
               title: "Discovery",
               description:
-                "Growth starts when your business is visible at the moment people are actively searching. We focus on capturing high-intent demand across search and digital channels.",
+                "Demand is fragmenting across Google, ChatGPT, Perplexity, AI Overviews, YouTube and social. We make sure your business shows up at the moment intent forms, on the surface where it forms.",
               borderColor: "border-secondary",
               hoverBg: "hover:bg-on-background hover:text-surface",
             },
             {
               title: "Trust",
               description:
-                "Visibility alone is not enough. We help turn attention into action by improving relevance, clarity, and user experience across every touchpoint.",
+                "Visibility without credibility converts poorly. We build entity authority, structured data and editorial signals so AI engines and buyers both recognise you as the answer, not just an option.",
               borderColor: "border-on-surface",
               hoverBg: "hover:bg-secondary hover:text-on-secondary",
             },
             {
               title: "Compounding",
               description:
-                "Sustainable growth comes from continuous improvement. We build systems that evolve, learn from data, and deliver better results over time.",
+                "Growth that doesn't compound is just spend. We build systems that learn, measure and improve, so each quarter inherits the gains of the last rather than starting from zero.",
               borderColor: "border-secondary",
               hoverBg: "hover:bg-on-background hover:text-surface",
             },
@@ -191,43 +195,6 @@ export default function AboutPage() {
         </div>
       </PageContainer>
 
-      {/* ─── WHAT WE DO ─── */}
-      <PageContainer className="bg-on-background text-surface relative overflow-hidden">
-        <span className="font-label uppercase tracking-[0.3em] text-xs text-secondary font-bold mb-6 block">
-          Capabilities
-        </span>
-        <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-16 text-surface">
-          What We Do
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {[
-            {
-              title: "SEO & AI Search",
-              desc: "Technical SEO, programmatic content, and optimisation for modern search experiences.",
-            },
-            {
-              title: "Paid Media",
-              desc: "Performance-driven campaigns across Google and social platforms.",
-            },
-            {
-              title: "Growth Strategy",
-              desc: "Positioning, go-to-market planning, and conversion optimisation.",
-            },
-            {
-              title: "Automation",
-              desc: "AI-driven workflows that improve efficiency and decision-making.",
-            },
-          ].map((item) => (
-            <div key={item.title} className="border-t-2 border-surface/20 pt-8">
-              <h3 className="text-3xl font-black uppercase mb-4 text-secondary">
-                {item.title}
-              </h3>
-              <p className="text-lg font-light text-surface/80">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </PageContainer>
-
       {/* ─── HOW WE WORK & PRINCIPLES ─── */}
       <PageContainer className="bg-surface-container-low">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
@@ -242,19 +209,19 @@ export default function AboutPage() {
               {[
                 {
                   title: "Understand",
-                  desc: "We assess your current performance, market, and opportunities.",
+                  desc: "Audit current performance against AI search visibility, organic share and paid efficiency. Identify the highest-leverage growth fronts.",
                 },
                 {
                   title: "Build",
-                  desc: "We implement strong foundations across SEO, paid media, and data.",
+                  desc: "Implement technical foundations, content systems and tracking. Set the entity, schema and authority signals that compound.",
                 },
                 {
                   title: "Improve",
-                  desc: "We refine performance continuously using real insights.",
+                  desc: "Optimise weekly using real performance data, AI citation tracking and conversion analysis.",
                 },
                 {
                   title: "Scale",
-                  desc: "We expand what works to drive sustainable growth.",
+                  desc: "Expand what works across markets, page types and surfaces. Bring in AI agents to operate the system at scale.",
                 },
               ].map((step, i) => (
                 <div key={step.title} className="flex gap-6">
@@ -283,10 +250,11 @@ export default function AboutPage() {
             <ul className="space-y-6">
               {[
                 "Build systems, not campaigns",
-                "Focus on measurable outcomes, not vanity metrics",
-                "Keep strategies clear, practical, and effective",
-                "Prioritise consistency over short-term spikes",
-                "Continuously improve based on real data",
+                "Measure what matters, ignore vanity metrics",
+                "Make strategy practical enough to ship",
+                "Compound over time, don't chase spikes",
+                "Optimise on real data, not opinions",
+                "Prepare for the search engine your customers will use in 2027, not 2017",
               ].map((principle) => (
                 <li key={principle} className="flex items-start gap-4">
                   <span className="material-symbols-outlined text-secondary mt-1">
@@ -307,12 +275,12 @@ export default function AboutPage() {
         <span className="font-label uppercase tracking-[0.3em] text-xs text-on-secondary font-bold mb-8 block">
           The Vision
         </span>
-        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter max-w-4xl mx-auto leading-tight mb-8 text-on-secondary">
-          Growth becomes far more predictable when it is built on the right
-          system.
+        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter max-w-6xl mx-auto leading-tight mb-8 text-on-secondary">
+          THE BUSINESSES THAT WIN THE NEXT DECADE WILL BE THE ONES BUILT TO BE
+          FOUND, TRUSTED AND CITED BY HUMANS AND BY AI.
         </h2>
         <p className="text-xl md:text-2xl font-medium text-on-secondary/80">
-          That&apos;s what we focus on at Anvi Digital.
+          That&apos;s what we build at Anvi Digital.
         </p>
       </PageContainer>
     </>
