@@ -16,35 +16,39 @@ const stats = [
 const channels = [
   {
     num: "01",
-    icon: "campaign",
-    title: "Programmatic Display",
-    desc: "Reach your audience at scale with data-driven display buying across premium inventory. Precision targeting, zero wasted impressions.",
+    icon: "ads_click",
+    title: "Paid Search",
+    desc: "Google and Bing campaigns built around high-intent demand signals. Keyword architecture aligned to your SEO program so organic and paid never compete for the same budget.",
     border: "border-secondary",
     hover: "hover:bg-on-background hover:text-surface",
+    tags: ["Google Ads", "Search Intent", "Keyword Architecture"],
   },
   {
     num: "02",
-    icon: "play_circle",
-    title: "Video & YouTube",
-    desc: "Tell your story where attention is highest. Pre-roll, in-stream, and connected TV campaigns built around real business outcomes.",
+    icon: "group",
+    title: "Paid Social",
+    desc: "Meta, LinkedIn and TikTok campaigns built around audience behaviour, not platform defaults. Creative testing frameworks that find what converts, not what gets clicks.",
     border: "border-on-surface",
     hover: "hover:bg-secondary hover:text-surface",
+    tags: ["Meta", "LinkedIn", "Creative Testing"],
   },
   {
     num: "03",
-    icon: "trending_up",
-    title: "Native Advertising",
-    desc: "Content-led ads that blend into the feed and drive qualified traffic without disrupting the user experience.",
+    icon: "campaign",
+    title: "Programmatic & Display",
+    desc: "Data-driven display across premium inventory. Retargeting sequences built around where the buyer actually is in their decision, not where the platform assumes they are.",
     border: "border-on-surface",
     hover: "hover:bg-secondary hover:text-surface",
+    tags: ["Programmatic", "Retargeting", "Intent Signals"],
   },
   {
     num: "04",
     icon: "hub",
-    title: "Cross-Channel Strategy",
-    desc: "We unify your paid media into a single system — one budget, one strategy, one source of truth for performance.",
+    title: "Paid + Organic Alignment",
+    desc: "The insight most agencies miss: paid and organic share the same customer. We align keyword strategy, landing pages and conversion architecture across both so each program makes the other more efficient over time.",
     border: "border-secondary",
     hover: "hover:bg-on-background hover:text-surface",
+    tags: ["Search Alignment", "Landing Page CRO", "Unified Attribution"],
   },
 ];
 
@@ -52,22 +56,22 @@ const process = [
   {
     step: "01",
     title: "Audience",
-    desc: "We map your ideal customer across channels — demographics, intent signals, and behavioural patterns that predict conversion.",
+    desc: "Map intent signals across search, social and behavioural data. Identify the highest-value customer segments and the specific moments they are ready to act. Align to what your organic data is already telling you.",
   },
   {
     step: "02",
     title: "Creative",
-    desc: "Ad creative built around your audience's pain points. We test formats, copy, and visuals to find what actually converts.",
+    desc: "Ad creative built around the intent signals discovered in step one. Systematic A/B testing across formats, copy angles and visual treatments. We kill what does not convert within two weeks, not two quarters.",
   },
   {
     step: "03",
     title: "Distribute",
-    desc: "Deploy across the right channels at the right time. Budget allocation driven by data, not assumptions.",
+    desc: "Deploy budget against the channels where intent is highest, not where the platform algorithm wants your spend. Distribution decisions driven by attribution data, not media sales pitches.",
   },
   {
     step: "04",
     title: "Optimise",
-    desc: "Continuous performance analysis. We shift spend toward what works and cut what doesn't — every single week.",
+    desc: "Weekly performance reviews against business outcomes, not platform metrics. ROAS and CPA are inputs, not the goal. The goal is cost per revenue at the bottom line.",
   },
 ];
 
@@ -82,18 +86,19 @@ export default function PaidMediaPage() {
           </span>
         </div> */}
         <h1 className="text-giant font-black uppercase mb-12">
-          Build Demand.
+          PAID THAT PAYS FOR
           <br />
-          <span className="text-secondary">Own Attention.</span>
+          <span className="text-secondary">ITSELF OVER TIME.</span>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-start-7 md:col-span-6 border-l-4 border-on-surface pl-8 py-4">
             <p className="text-base md:text-2xl font-light leading-snug mb-8">
-              Full-funnel paid media that creates demand at the top and captures
-              it at the bottom — working as one system.
+              Most paid media stops working the moment the budget stops. We
+              design campaigns that fund organic authority and reduce what you
+              need to spend next quarter.
             </p>
             <ContactLink className="bg-on-background text-surface px-10 py-5 font-bold uppercase tracking-widest text-sm hover:bg-secondary transition-colors inline-block">
-              Start a Campaign
+              LET'S TALK GROWTH
             </ContactLink>
           </div>
         </div>
@@ -124,8 +129,9 @@ export default function PaidMediaPage() {
             One Strategy.
           </h2>
           <p className="text-2xl max-w-xl text-on-surface-variant font-light">
-            We don&apos;t silo your media. We build a unified system that
-            compounds over time.
+            Paid media that does not live in a silo. Every channel informed by
+            the same audience data, feeding the same conversion surface,
+            measured against the same business outcome.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -148,6 +154,16 @@ export default function PaidMediaPage() {
                   {c.desc}
                 </p>
               </div>
+              <div className="flex flex-wrap gap-2 mt-8">
+                {c.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs uppercase tracking-widest font-bold border border-current px-3 py-1 opacity-60"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
@@ -161,27 +177,29 @@ export default function PaidMediaPage() {
               OUR APPROACH
             </span>
             <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-8">
-              Moving Past
+              PAID MEDIA
               <br />
-              Silos.
+              THAT LEARNS.
             </h2>
             <p className="text-xl text-surface/60 mb-6 leading-relaxed">
-              Most paid media fails because channels operate independently.
-              Display doesn&apos;t talk to search. Video doesn&apos;t feed
-              retargeting.
+              Most paid programs are rebuilt from scratch every quarter. New
+              brief, new creative, new targeting. No institutional memory. No
+              compounding.
             </p>
             <div className="w-12 h-1 bg-secondary mb-6" />
             <p className="text-xl text-surface/80 font-bold leading-relaxed">
-              We design paid media as a single compounding system — so
-              performance improves over time while cost per acquisition falls.
+              We build paid media that learns from every campaign cycle.
+              Audience signals from this month inform next month's targeting.
+              Creative that converts gets systematised. Spend shifts toward what
+              works automatically, not manually.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-px bg-surface/10">
             {[
-              "Brand Awareness",
-              "Demand Generation",
-              "Lead Acquisition",
-              "Retargeting",
+              "DEMAND CREATION",
+              "PIPELINE CONVERSION",
+              "BRAND AUTHORITY",
+              "RETENTION & REACTIVATION",
             ].map((item) => (
               <div
                 key={item}
@@ -208,7 +226,7 @@ export default function PaidMediaPage() {
           {process.map((p, i) => (
             <div
               key={p.step}
-              className={`p-12 md:p-20 border-b-2 border-on-surface flex flex-col justify-between ${i % 2 === 0 ? "md:border-r-2" : ""} ${i % 2 === 1 ? "bg-surface-container-low" : ""}`}
+              className={`p-12 border-b-2 border-on-surface flex flex-col justify-between ${i % 2 === 0 ? "md:border-r-2" : ""} ${i % 2 === 1 ? "bg-surface-container-low" : ""}`}
             >
               <span className="text-8xl md:text-[10rem] font-black leading-none text-outline mb-12 block">
                 {p.step}
@@ -217,7 +235,7 @@ export default function PaidMediaPage() {
                 <h3 className="text-4xl font-black uppercase mb-6 tracking-tight">
                   {p.title}
                 </h3>
-                <p className="text-xl text-on-surface-variant leading-relaxed max-w-sm">
+                <p className="text-xl text-on-surface-variant leading-relaxed">
                   {p.desc}
                 </p>
               </div>
