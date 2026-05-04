@@ -2,19 +2,12 @@ import type { Metadata } from "next";
 import PageContainer from "@/components/PageContainer";
 import AITheme from "@/components/AITheme";
 import ContactLink from "@/components/ContactLink";
+import JsonLd from "@/components/JsonLd";
+import { AI_AGENTS_METADATA, BASE_VIEWPORT } from "@/constants/seo.constants";
+import { AI_AGENTS_STRUCTURED_DATA } from "@/constants/schema.constants";
 
-export const metadata: Metadata = {
-  title: "AI Agents — Practical AI Built for Real Business Work",
-  description:
-    "We design and implement AI agents that fit into your workflows, helping you move faster, uncover insights, and execute with more clarity.",
-  openGraph: {
-    title:
-      "AI Agents — Practical AI Built for Real Business Work | ANVI DIGITAL",
-    description:
-      "We design and implement AI agents that fit into your workflows, helping you move faster, uncover insights, and execute with more clarity.",
-  },
-  alternates: { canonical: "https://anvi.digital/ai-agents" },
-};
+export const metadata = AI_AGENTS_METADATA;
+export const viewport = BASE_VIEWPORT;
 
 const useCases = [
   {
@@ -91,6 +84,7 @@ export default function AIAgentsPage() {
   return (
     <>
       <AITheme />
+      <JsonLd data={AI_AGENTS_STRUCTURED_DATA} />
       {/* ─── HERO ─── */}
       <PageContainer className="min-h-[80vh] md:min-h-screen flex flex-col justify-center items-center py-0!">
         <div className="mt-auto w-full">

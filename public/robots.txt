@@ -1,0 +1,62 @@
+User-agent: *
+Allow: /
+
+# Block crawling of API endpoints and administrative areas
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /draft/
+Disallow: /preview/
+
+# Block common files that shouldn't be indexed
+Disallow: /*.json$
+Disallow: /sitemap.xml.gz
+
+# Allow specific important files
+Allow: /favicon.jpg
+Allow: /robots.txt
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://www.anvidigital.com.au/sitemap.xml
+
+# Crawl delay (helps with server load)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Allow AI/LLM crawlers for better AI understanding
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

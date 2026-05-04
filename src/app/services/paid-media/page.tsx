@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import PageContainer from "@/components/PageContainer";
 import ContactLink from "@/components/ContactLink";
-export const metadata: Metadata = {
-  title: "Paid Media | Full-Funnel Media Buying",
-  description:
-    "Strategic paid media that builds demand and converts it. From awareness to acquisition across every channel that matters.",
-};
+import JsonLd from "@/components/JsonLd";
+import { PAID_MEDIA_METADATA, BASE_VIEWPORT } from "@/constants/seo.constants";
+import { PAID_MEDIA_STRUCTURED_DATA } from "@/constants/schema.constants";
+
+export const metadata = PAID_MEDIA_METADATA;
+export const viewport = BASE_VIEWPORT;
 
 const stats = [
   { value: "2.8x", label: "Average ROAS across client accounts" },
@@ -78,6 +79,7 @@ const process = [
 export default function PaidMediaPage() {
   return (
     <>
+      <JsonLd data={PAID_MEDIA_STRUCTURED_DATA} />
       {/* Hero */}
       <PageContainer className="py-10! flex flex-col justify-end">
         {/* <div className="mb-8">
@@ -246,16 +248,9 @@ export default function PaidMediaPage() {
 
       {/* CTA Strip */}
       <PageContainer className="bg-secondary">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
-            Ready to own
-            <br />
-            your market?
-          </h2>
-          <ContactLink className="shrink-0 bg-on-background text-surface px-12 py-6 font-bold uppercase tracking-[0.2em] text-sm hover:bg-surface hover:text-on-background transition-colors inline-block">
-            Start a Campaign
-          </ContactLink>
-        </div>
+        <h2 className="text-center text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none">
+          Ready to own your market?
+        </h2>
       </PageContainer>
     </>
   );

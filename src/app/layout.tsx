@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Space_Grotesk } from "next/font/google";
 import MainLayout from "@/components/MainLayout";
+import { BASE_VIEWPORT } from "@/constants/seo.constants";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -11,10 +12,10 @@ const spaceGrotesk = Space_Grotesk({
   display: "optional",
 });
 
-const siteUrl = "https://anvi.digital";
-
+// Layout-level metadata — provides the title template and fallback defaults.
+// Individual pages override title/description/canonical via their own metadata exports.
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL("https://www.anvidigital.com.au"),
   title: {
     default: "ANVI DIGITAL | Architecting Growth Through Intelligence",
     template: "%s | ANVI DIGITAL",
@@ -24,7 +25,6 @@ export const metadata: Metadata = {
   keywords: [
     "AI Agents",
     "AI SEO",
-    "AI SEO",
     "Answer Engine Optimization",
     "AEO",
     "Google Ads",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Digital Marketing Agency",
     "AI Growth Team",
   ],
-  authors: [{ name: "ANVI DIGITAL", url: siteUrl }],
+  authors: [{ name: "ANVI DIGITAL", url: "https://www.anvidigital.com.au" }],
   creator: "ANVI DIGITAL",
   publisher: "ANVI DIGITAL",
   robots: {
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: siteUrl,
+    url: "https://www.anvidigital.com.au",
     siteName: "ANVI DIGITAL",
     title: "ANVI DIGITAL | Architecting Growth Through Intelligence",
     description:
       "Drive velocity with a full-stack AI-powered growth team. Expert AI SEO, AI Agents, and Google Ads that deliver measurable ROI.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/images/anvi-poster.png",
         width: 1200,
         height: 630,
         alt: "ANVI DIGITAL – Architecting Growth Through Intelligence",
@@ -69,13 +69,11 @@ export const metadata: Metadata = {
     title: "ANVI DIGITAL | Architecting Growth Through Intelligence",
     description:
       "Drive velocity with a full-stack AI-powered growth team. Expert AI SEO, AI Agents, and Google Ads.",
-    images: ["/og-image.png"],
+    images: ["/images/anvi-poster.png"],
     creator: "@anvidigital",
     site: "@anvidigital",
   },
-  alternates: {
-    canonical: siteUrl,
-  },
+  alternates: { canonical: "https://www.anvidigital.com.au" },
   icons: {
     icon: [
       { url: "/favicon.jpg", type: "image/svg+xml" },
@@ -87,54 +85,7 @@ export const metadata: Metadata = {
   category: "technology",
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "ANVI DIGITAL",
-  url: siteUrl,
-  logo: `${siteUrl}/favicon.jpg`,
-  description:
-    "Full-stack AI-powered growth team specialising in AI SEO, AI Agents, and Google Ads.",
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "growth@anvi.digital",
-    contactType: "sales",
-    availableLanguage: "English",
-  },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "London",
-    addressCountry: "GB",
-  },
-  sameAs: [
-    "https://www.linkedin.com/company/anvidigital",
-    "https://twitter.com/anvidigital",
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Growth Services",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "AI SEO",
-          description:
-            "AI-powered search optimization including AEO, Google Ads, and Paid Social.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "AI Agents",
-          description:
-            "Custom LLM agent development and deployment with enterprise-grade governance.",
-        },
-      },
-    ],
-  },
-};
+export const viewport = BASE_VIEWPORT;
 
 export default function RootLayout({
   children,
@@ -162,10 +113,6 @@ export default function RootLayout({
             rel="stylesheet"
           />
         </noscript>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </head>
       <body
         suppressHydrationWarning

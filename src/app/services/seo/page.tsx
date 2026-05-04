@@ -8,16 +8,20 @@ import {
   RoundShape,
   HalfRoundShape,
 } from "@/assets/shapes";
+import JsonLd from "@/components/JsonLd";
+import {
+  SEO_SERVICES_METADATA,
+  BASE_VIEWPORT,
+} from "@/constants/seo.constants";
+import { SEO_SERVICES_STRUCTURED_DATA } from "@/constants/schema.constants";
 
-export const metadata: Metadata = {
-  title: "SEO Services | Anvi Digital",
-  description:
-    "Build a predictable pipeline of high-intent traffic through search, powered by strategy, content, and technical execution.",
-};
+export const metadata = SEO_SERVICES_METADATA;
+export const viewport = BASE_VIEWPORT;
 
 export default function SEOServicesPage() {
   return (
     <>
+      <JsonLd data={SEO_SERVICES_STRUCTURED_DATA} />
       {/* ─── HERO ─── */}
       <PageContainer className="flex flex-col pt-8">
         <div className="mt-auto w-full">

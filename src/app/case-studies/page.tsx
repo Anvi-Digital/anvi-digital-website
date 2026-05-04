@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import { caseStudies } from "@/data/caseStudies";
-import ContactLink from "@/components/ContactLink";
-export const metadata: Metadata = {
-  title: "Case Studies | Anvi Digital",
-  description:
-    "Real results from real partnerships. Explore how we've driven measurable growth through AI SEO, paid media, and intelligent automation.",
-  alternates: { canonical: "https://anvi.digital/case-studies" },
-};
+import JsonLd from "@/components/JsonLd";
+import {
+  CASE_STUDIES_METADATA,
+  BASE_VIEWPORT,
+} from "@/constants/seo.constants";
+import { CASE_STUDIES_STRUCTURED_DATA } from "@/constants/schema.constants";
+
+export const metadata = CASE_STUDIES_METADATA;
+export const viewport = BASE_VIEWPORT;
 
 export default function CaseStudiesPage() {
   return (
     <>
+      <JsonLd data={CASE_STUDIES_STRUCTURED_DATA} />
       {/* ─── HERO ─── */}
       <section className="bg-on-background text-surface  flex items-end relative px-8 py-10">
         <div
@@ -63,10 +66,13 @@ export default function CaseStudiesPage() {
                   <p className="text-base md:text-lg text-on-surface-variant/70 font-light max-w-2xl">
                     {study.context}
                   </p>
-                  
+
                   {study.clients && (
                     <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant/40 mt-4">
-                      Client: <span className="text-on-surface-variant/80">{study.clients}</span>
+                      Client:{" "}
+                      <span className="text-on-surface-variant/80">
+                        {study.clients}
+                      </span>
                     </p>
                   )}
 
@@ -86,27 +92,6 @@ export default function CaseStudiesPage() {
             </div>
           </div>
         ))}
-      </section>
-
-      {/* ─── CTA ─── */}
-      <section className="grid grid-cols-1 md:grid-cols-2">
-        <div className="bg-secondary flex items-center justify-center p-16 md:p-24">
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.85] text-on-secondary">
-            Your
-            <br />
-            Turn.
-          </h2>
-        </div>
-        <div className="bg-on-background flex items-center justify-center p-16 md:p-24">
-          <div className="max-w-sm text-center">
-            <p className="text-xl text-surface/60 font-light mb-10 leading-relaxed">
-              Every result above started with a single conversation.
-            </p>
-            <ContactLink className="bg-surface text-on-surface px-10 py-5 font-bold uppercase tracking-[0.2em] text-sm hover:bg-secondary hover:text-on-secondary transition-colors inline-block">
-              Let&apos;s Talk Growth
-            </ContactLink>
-          </div>
-        </div>
       </section>
     </>
   );

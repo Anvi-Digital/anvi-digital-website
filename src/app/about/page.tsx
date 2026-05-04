@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import PageContainer from "@/components/PageContainer";
+import JsonLd from "@/components/JsonLd";
+import { ABOUT_METADATA, BASE_VIEWPORT } from "@/constants/seo.constants";
+import { ABOUT_STRUCTURED_DATA } from "@/constants/schema.constants";
 
-export const metadata: Metadata = {
-  title: "About | Anvi Digital",
-  description:
-    "Anvi Digital is a growth agency focused on building reliable, scalable demand systems.",
-};
+export const metadata = ABOUT_METADATA;
+export const viewport = BASE_VIEWPORT;
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={ABOUT_STRUCTURED_DATA} />
       {/* ─── HERO ─── */}
       <PageContainer className="min-h-[80vh] md:min-h-screen flex flex-col">
         <div className="mt-auto w-full">
