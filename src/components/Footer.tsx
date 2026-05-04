@@ -10,7 +10,7 @@ import { useTheme } from "@/context/ThemeContext";
 
 const footerLinks = {
   "What We Do": [
-    { label: "SEO", href: "/services/seo" },
+    { label: "SEO & AI Search", href: "/services/seo" },
     { label: "Paid Media", href: "/services/paid-media" },
   ],
   Company: [
