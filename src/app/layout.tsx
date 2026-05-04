@@ -37,14 +37,11 @@ export const metadata: Metadata = {
   creator: "ANVI DIGITAL",
   publisher: "ANVI DIGITAL",
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
     googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      index: false,
+      follow: false,
     },
   },
   openGraph: {
